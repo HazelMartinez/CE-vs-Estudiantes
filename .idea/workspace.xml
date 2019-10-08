@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3992e848-f433-4dd6-b05f-da9a96357849" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Evolucionador.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Evolucionador.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Juego.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Juego.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Listas/Lista.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Listas/Lista.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Listas/Node.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Listas/Node.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Arquero.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Arquero.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Artillero.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Artillero.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Curso.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Curso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Evaluacion.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Evaluacion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/LanzaFuego.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/LanzaFuego.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Mago.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Cursos/Mago.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Elfo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Elfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Enemigo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Enemigo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Harpia.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Harpia.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Mercenario.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Mercenario.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Ogro.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Estudiantes/Ogro.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Personaje.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Personajes/Personaje.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tablero.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tablero.h" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RwHgY6DrwZ3vruYzKI8eDkD0IR" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3992e848-f433-4dd6-b05f-da9a96357849" name="Default Changelist" comment="" />
+      <created>1570571349365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570571349365</updated>
+      <workItem from="1570571350559" duration="609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
