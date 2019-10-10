@@ -5,8 +5,11 @@
 #ifndef CE_VS_ESTUDIANTES_MERCENARIO_H
 #define CE_VS_ESTUDIANTES_MERCENARIO_H
 
-
-class Mercenario {
+#include "Enemigo.h"
+class Mercenario: public Enemigo {
+public:
+    Mercenario();
+    ~Mercenario();
 
 };
 

@@ -4,9 +4,12 @@
 
 #ifndef CE_VS_ESTUDIANTES_OGRO_H
 #define CE_VS_ESTUDIANTES_OGRO_H
+#include "Enemigo.h"
 
-
-class Ogro {
+class Ogro : public Enemigo{
+public:
+    Ogro();
+    ~Ogro();
 
 };
 

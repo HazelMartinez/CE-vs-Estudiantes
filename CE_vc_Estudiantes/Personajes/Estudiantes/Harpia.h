@@ -4,9 +4,12 @@
 
 #ifndef CE_VS_ESTUDIANTES_HARPIA_H
 #define CE_VS_ESTUDIANTES_HARPIA_H
+#include "Enemigo.h"
 
-
-class Harpia {
+class Harpia: public Enemigo {
+public:
+    Harpia();
+    ~ Harpia();
 
 };
 

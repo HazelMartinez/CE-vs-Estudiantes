@@ -4,9 +4,11 @@
 
 #ifndef CE_VS_ESTUDIANTES_CURSO_H
 #define CE_VS_ESTUDIANTES_CURSO_H
-
+#include"Personajes/Personaje.h"
 
 class Curso {
+    Curso();
+    Curso crearCurso();
 
 };
 

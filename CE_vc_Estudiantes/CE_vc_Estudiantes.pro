@@ -24,10 +24,44 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+        Evolucionador.cpp \
+        Juego.cpp \
+        Listas/Lista.cpp \
+        Listas/Node.cpp \
+        Personajes/Cursos/Arquero.cpp \
+        Personajes/Cursos/Artillero.cpp \
+        Personajes/Cursos/Curso.cpp \
+        Personajes/Cursos/Evaluacion.cpp \
+        Personajes/Cursos/LanzaFuego.cpp \
+        Personajes/Cursos/Mago.cpp \
+        Personajes/Estudiantes/Elfo.cpp \
+        Personajes/Estudiantes/Enemigo.cpp \
+        Personajes/Estudiantes/Harpia.cpp \
+        Personajes/Estudiantes/Mercenario.cpp \
+        Personajes/Estudiantes/Ogro.cpp \
+        Personajes/Personaje.cpp \
+        Tablero.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        Evolucionador.h \
+        Juego.h \
+        Listas/Lista.h \
+        Listas/Node.h \
+        Personajes/Cursos/Arquero.h \
+        Personajes/Cursos/Artillero.h \
+        Personajes/Cursos/Curso.h \
+        Personajes/Cursos/Evaluacion.h \
+        Personajes/Cursos/LanzaFuego.h \
+        Personajes/Cursos/Mago.h \
+        Personajes/Estudiantes/Elfo.h \
+        Personajes/Estudiantes/Enemigo.h \
+        Personajes/Estudiantes/Harpia.h \
+        Personajes/Estudiantes/Mercenario.h \
+        Personajes/Estudiantes/Ogro.h \
+        Personajes/Personaje.h \
+        Tablero.h \
         mainwindow.h
 
 FORMS += \

@@ -4,9 +4,12 @@
 
 #ifndef CE_VS_ESTUDIANTES_ELFO_H
 #define CE_VS_ESTUDIANTES_ELFO_H
+#include "Enemigo.h"
 
-
-class Elfo {
+class Elfo: public Enemigo {
+public:
+    Elfo();
+    ~Elfo();
 
 };
 
