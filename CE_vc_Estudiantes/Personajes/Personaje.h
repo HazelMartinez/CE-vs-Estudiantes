@@ -11,7 +11,7 @@
 class Personaje {
 
      Enemigo* crearEnemigo(int tipo);
-     Curso* crearCurso(int tipo);
+     //Curso* crearCurso(int tipo);
 
 };
 

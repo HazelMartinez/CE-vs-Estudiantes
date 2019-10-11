@@ -42,7 +42,8 @@ SOURCES += \
         Personajes/Personaje.cpp \
         Tablero.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    square.cpp
 
 HEADERS += \
         Evolucionador.h \
@@ -62,7 +63,8 @@ HEADERS += \
         Personajes/Estudiantes/Ogro.h \
         Personajes/Personaje.h \
         Tablero.h \
-        mainwindow.h
+        mainwindow.h \
+    square.h
 
 FORMS += \
         mainwindow.ui
