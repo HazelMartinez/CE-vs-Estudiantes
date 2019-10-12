@@ -4,7 +4,7 @@
 
 #include "Elfo.h"
 
-Elfo::Elfo()
+Elfo::Elfo():Enemigo()
 {
     ResistenciaArqueros = 3;
     ResistenciaArtilleros = 3;

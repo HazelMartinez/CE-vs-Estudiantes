@@ -11,9 +11,8 @@
 class Personaje {
 
      Enemigo* crearEnemigo(int tipo);
-     Curso* crearCurso(int tipo);
+//     Curso* crearCurso(int tipo);
 
 };
-
 
 #endif //CE_VS_ESTUDIANTES_PERSONAJE_H

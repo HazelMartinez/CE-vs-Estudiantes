@@ -5,7 +5,7 @@
 #include "Ogro.h"
 #include "Enemigo.h"
 
-Ogro::Ogro()
+Ogro::Ogro():Enemigo()
 {
     ResistenciaArqueros = 3;
     ResistenciaArtilleros = 1;

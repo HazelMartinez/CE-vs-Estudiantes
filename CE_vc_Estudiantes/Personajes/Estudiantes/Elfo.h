@@ -7,9 +7,12 @@
 #include "Enemigo.h"
 
 class Elfo: public Enemigo {
+
 public:
-    Elfo();
-    ~Elfo();
+
+     Elfo();
+     ~Elfo();
+
 
 };
 

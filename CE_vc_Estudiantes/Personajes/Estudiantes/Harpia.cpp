@@ -4,7 +4,7 @@
 
 #include "Harpia.h"
 
-Harpia::Harpia()
+Harpia::Harpia():Enemigo()
 {
     ResistenciaArqueros = 5;
     ResistenciaArtilleros = 5;

@@ -5,8 +5,15 @@
 #ifndef CE_VS_ESTUDIANTES_TABLERO_H
 #define CE_VS_ESTUDIANTES_TABLERO_H
 
+#include "Listas/Lista.h"
+
 
 class Tablero {
+public:
+    Tablero();
+    Lista PrimeraOleada();
+    Lista ListaEnemigos;
+    Lista ListaCursos;
 
 };
 

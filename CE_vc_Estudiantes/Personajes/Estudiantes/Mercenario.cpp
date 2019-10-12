@@ -4,7 +4,7 @@
 
 #include "Mercenario.h"
 
-Mercenario::Mercenario()
+Mercenario::Mercenario():Enemigo()
 {
     ResistenciaArqueros = 3;
     ResistenciaArtilleros = 1;

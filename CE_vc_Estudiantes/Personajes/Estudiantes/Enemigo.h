@@ -17,11 +17,11 @@ public:
        int ResistenciaLanzaFuego;
        int PorcentajeAtaques;
        int Velocidad;
-
+       int id;
        void mover(int x, int y);
        void reprobar();
        void validar();
-       virtual ~Enemigo();
+       ~Enemigo();
 
 };
 
