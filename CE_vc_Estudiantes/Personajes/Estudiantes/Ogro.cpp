@@ -4,7 +4,7 @@
 
 #include "Ogro.h"
 #include "Enemigo.h"
-
+/*
 Ogro::Ogro()
 {
     ResistenciaArqueros = 3;
@@ -14,4 +14,4 @@ Ogro::Ogro()
     Velocidad = 1;
 }
 
-
+*/

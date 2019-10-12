@@ -18,6 +18,6 @@ Juego::Juego(QWidget *parent){
 void Juego::start(){
     // test code TODO remove
     tablero = new Tablero();
-    tablero->getSquares();
-
+    //tablero->getSquares();
+    tablero->placeSquares(100,100,3,3);
 }

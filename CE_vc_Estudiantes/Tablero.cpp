@@ -16,16 +16,16 @@ void Tablero::placeSquares(int x, int y, int cols, int rows){
     int Y_SHIFT = 41;
 
     for (size_t i = 0, n = cols; i < n; i++){
-        Y_SHIFT = 0;
-        /*
+        //Y_SHIFT = 0;
+
         if (i % 2 == 0){ // even column
             Y_SHIFT = 0;
         }
         else{ // odd column
             Y_SHIFT = 41;
         }
-        createHexColumn(x+X_SHIFT*i,y+Y_SHIFT,rows);
-        */
+        createSquareColumn(x+X_SHIFT*i,y+Y_SHIFT,rows);
+
     }
 }
 

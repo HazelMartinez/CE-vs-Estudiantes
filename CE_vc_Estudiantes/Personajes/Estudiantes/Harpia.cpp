@@ -1,7 +1,7 @@
 //
 // Created by abigail on 8/10/19.
 //
-
+/*
 #include "Harpia.h"
 
 Harpia::Harpia()
@@ -13,3 +13,4 @@ Harpia::Harpia()
     Velocidad = 2;
 }
 
+*/

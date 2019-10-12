@@ -7,7 +7,7 @@
 #include "Estudiantes/Harpia.h"
 #include "Estudiantes/Mercenario.h"
 #include "Estudiantes/Ogro.h"
-
+/*
 Enemigo *Personaje::crearEnemigo(int tipo)
 {
     Enemigo *temp = new Enemigo();
@@ -42,3 +42,4 @@ Enemigo *Personaje::crearEnemigo(int tipo)
     }
     return temp;
 }
+*/

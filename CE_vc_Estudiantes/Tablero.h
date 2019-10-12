@@ -1,8 +1,7 @@
-#include <QList>
-#include "square.h"
-
 #ifndef CE_VS_ESTUDIANTES_TABLERO_H
 #define CE_VS_ESTUDIANTES_TABLERO_H
+#include <QList>
+#include "square.h"
 
 
 class Tablero {
