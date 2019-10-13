@@ -12,6 +12,8 @@ Ogro::Ogro():Enemigo()
     ResistenciaMago = 1;
     ResistenciaLanzaFuego = 1;
     Velocidad = 1;
+    this->CalcularFitness();
+    tipo = 1;
 }
 
 

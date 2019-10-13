@@ -7,9 +7,12 @@
 Harpia::Harpia():Enemigo()
 {
     ResistenciaArqueros = 5;
-    ResistenciaArtilleros = 5;
-    ResistenciaMago = 1;
+    ResistenciaArtilleros = 1;
+    ResistenciaMago = 5;
     ResistenciaLanzaFuego = 1;
     Velocidad = 2;
+    this->CalcularFitness();
+    tipo = 3;
 }
+
 

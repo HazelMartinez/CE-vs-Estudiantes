@@ -7,10 +7,12 @@
 Elfo::Elfo():Enemigo()
 {
     ResistenciaArqueros = 3;
-    ResistenciaArtilleros = 3;
-    ResistenciaMago = 1;
+    ResistenciaArtilleros = 1;
+    ResistenciaMago = 3;
     ResistenciaLanzaFuego = 1;
     Velocidad = 2;
+    this->CalcularFitness();
+    tipo = 2;
 
 }
 

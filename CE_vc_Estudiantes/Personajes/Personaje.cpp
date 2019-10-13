@@ -13,25 +13,25 @@ Enemigo *Personaje::crearEnemigo(int tipo)
         Enemigo *temp = new Enemigo();
         switch(tipo) {
 
-        case 1:
+        case 2:
         {
             Enemigo* elfo = new Elfo();
             temp = elfo;
             break;
         }
-        case 2 :
+        case 3 :
         {
             Enemigo* harpia = new Harpia();
             temp = harpia;
             break;
         }
-        case 3 :
+        case 4 :
         {
             Enemigo* mercenario = new Mercenario();
             temp = mercenario;
             break;
         }
-        case 4 :
+        case 1 :
         {
             Enemigo* ogro = new Ogro();
            temp = ogro;

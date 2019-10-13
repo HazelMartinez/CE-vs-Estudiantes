@@ -9,11 +9,7 @@
 
 
 class Tablero {
-public:
-    Tablero();
-    Lista PrimeraOleada();
-    Lista ListaEnemigos;
-    Lista ListaCursos;
+
 
 };
 

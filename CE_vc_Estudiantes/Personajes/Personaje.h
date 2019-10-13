@@ -9,7 +9,7 @@
 
 
 class Personaje {
-
+public:
      Enemigo* crearEnemigo(int tipo);
 //     Curso* crearCurso(int tipo);
 
