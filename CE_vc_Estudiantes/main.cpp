@@ -48,11 +48,11 @@ int main(int argc, char *argv[])
     matriz->Append(lista);
     matriz->Append(lista);
 
-    matriz->Display();
+
     // finalización de la prueba de la matriz
 
 
-    for(int i = 0; i<1; i++){
+    for(int i = 0; i<2; i++){
          num = 1 + rand() % (4);
          Enemigo*n = p.crearEnemigo(num);
          enemigos.add_end(*n);
@@ -61,10 +61,10 @@ int main(int argc, char *argv[])
     }
 
     Evolucionador * uno = Evolucionador::getInstance();
-    cout<< uno->Mutacion(enemigos.get(0)).ResistenciaMago<<endl;
-    cout<< uno->Mutacion(enemigos.get(0)).ResistenciaArtilleros<<endl;
-    cout<< uno->Inversion(enemigos.get(0)).ResistenciaArtilleros<<endl;
 
+    uno->Cruce(enemigos.get(0),enemigos.get(1));
+    cout << uno->Cruce(enemigos.get(0),enemigos.get(1))->tipo;
+    cout << uno->Cruce(enemigos.get(0),enemigos.get(1))->ResistenciaMago;
 
 
 

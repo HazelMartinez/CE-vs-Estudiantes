@@ -4,6 +4,9 @@
 
 #include "Evolucionador.h"
 #include "Personajes/Personaje.h"
+#include <bitset>
+#include <iostream>
+using namespace std;
 
 Evolucionador::Evolucionador()
 {
@@ -12,49 +15,30 @@ Evolucionador::Evolucionador()
 
 Enemigo* Evolucionador::Cruce(Enemigo madre, Enemigo padre)
 {
-    Personaje p;
-    Enemigo* hijo;
-    if (madre.tipo > padre.tipo){
-    hijo = p.crearEnemigo(madre.tipo);
-    hijo->Velocidad = padre.Velocidad;
-    hijo->ResistenciaMago = padre.ResistenciaMago;
-    hijo->ResistenciaLanzaFuego = padre.ResistenciaLanzaFuego;
-    }else{
-        hijo = p.crearEnemigo(padre.tipo);
-        hijo->Velocidad = madre.Velocidad;
-        hijo->ResistenciaMago = madre.ResistenciaMago;
-        hijo->ResistenciaLanzaFuego = madre.ResistenciaLanzaFuego;
-    }
-    hijo->CalcularFitness();
+    string ADNMadre = this->ObtenerADN(madre);
+    string ADNPadre = this->ObtenerADN(padre);
+    string ADNHijo;
+    ADNHijo = ADNMadre.substr(0,ADNMadre.length()/2)+
+            ADNPadre.substr(ADNPadre.length()/2,ADNPadre.length());
+
+    Enemigo* hijo = this->Crearhijo(ADNHijo);
+
+
+
+
     return hijo;
 }
 
 Enemigo Evolucionador::Mutacion(Enemigo sujeto)
 {
-     int num;
-     num = 1 + rand() % (2);
-     if(num>2){
-         sujeto.ResistenciaMago = sujeto.ResistenciaMago + 1 + rand() % (4);
-         sujeto.ResistenciaArqueros = sujeto.ResistenciaArqueros+ 1 + rand() % (4);
-
-     }else{
-         sujeto.ResistenciaArtilleros = sujeto.ResistenciaArtilleros + 1 + rand() % (4);
-         sujeto.ResistenciaLanzaFuego = sujeto.ResistenciaLanzaFuego+ 1 + rand() % (4);
-
-     }
      return sujeto;
 
 }
 
 Enemigo Evolucionador::Inversion(Enemigo sujeto)
 {
-    if(sujeto.ResistenciaArtilleros == 3){
-        sujeto.ResistenciaArtilleros =1;
-    }else
-    {
-      sujeto.ResistenciaArtilleros =3;
-    }
     return sujeto;
+
 }
 
 Evolucionador *Evolucionador::getInstance()
@@ -62,4 +46,43 @@ Evolucionador *Evolucionador::getInstance()
     static Evolucionador* instancia = new Evolucionador();
     return instancia;
 }
+
+string Evolucionador::ObtenerADN(Enemigo sujeto)
+{
+    bitset<4> Gen1(sujeto.ResistenciaMago);
+    bitset<4> Gen2(sujeto.ResistenciaArqueros);
+    bitset<4> Gen3(sujeto.ResistenciaArtilleros);
+    bitset<4> Gen4(sujeto.ResistenciaLanzaFuego);
+    bitset<4> Gen5(sujeto.Velocidad);
+    bitset<4> Gen6(sujeto.tipo);
+    string ADN = Gen1.to_string() + Gen2.to_string() +
+            Gen3.to_string() + Gen4.to_string() +
+            Gen5.to_string() + Gen6.to_string();
+
+    return ADN;
+}
+
+Enemigo *Evolucionador::Crearhijo(string ADN)
+
+{
+    Personaje p;
+
+     bitset<4> Gen1(ADN.substr(0,4));
+     bitset<4> Gen2(ADN.substr(4,8));
+     bitset<4> Gen3(ADN.substr(8,12));
+     bitset<4> Gen4(ADN.substr(12,16));
+     bitset<4> Gen5(ADN.substr(16,20));
+     bitset<4> Gen6(ADN.substr(20,24));
+     Enemigo *hijo = p.crearEnemigo(Gen6.to_ulong());
+     hijo->ResistenciaMago = Gen1.to_ulong();
+     hijo->ResistenciaArqueros = Gen2.to_ulong();
+     hijo->ResistenciaArtilleros = Gen3.to_ulong();
+
+
+
+    return hijo;
+
+}
+
+
 
