@@ -1,14 +1,51 @@
-//
-// Created by abigail on 8/10/19.
-//
+#ifndef NODE_H
+#define NODE_H
 
-#ifndef CE_VS_ESTUDIANTES_NODE_H
-#define CE_VS_ESTUDIANTES_NODE_H
+#include <iostream>
 
+using namespace std;
 
-class Node {
+template <class T>
+
+/**
+ * @brief  Conforma la lista.
+ *
+ */
+class Node
+{
+    public:
+        /**
+         * @brief Constructor por defecto
+         *
+         */
+        Node();
+        /**
+         * @brief
+         *
+         * @param T
+         */
+        Node(T);
+        /**
+         * @brief Destructor por defecto
+         *
+         */
+        ~Node();
+
+        Node *next; /**< TODO: describe */
+        T  Data; /**< TODO: describe */
 
 };
 
+template<typename T>
+/**
+ * @brief Constructor
+ *
+ * @param data
+ */
+Node<T>:: Node(T data){
 
-#endif //CE_VS_ESTUDIANTES_NODE_H
+    Data = data;
+    next = nullptr;
+}
+
+#endif // NODE_H
