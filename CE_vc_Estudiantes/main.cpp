@@ -62,9 +62,7 @@ int main(int argc, char *argv[])
 
     Evolucionador * uno = Evolucionador::getInstance();
 
-    uno->Cruce(enemigos.get(0),enemigos.get(1));
-    cout << uno->Cruce(enemigos.get(0),enemigos.get(1))->tipo;
-    cout << uno->Cruce(enemigos.get(0),enemigos.get(1))->ResistenciaMago;
+    uno->Inversion(enemigos.get(0));
 
 
 

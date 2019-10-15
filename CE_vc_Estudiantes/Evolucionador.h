@@ -23,7 +23,7 @@ public:
     Evolucionador(const Evolucionador*) = delete;
     Evolucionador* operator = (const Evolucionador*) = delete;
     string ObtenerADN(Enemigo sujeto);
-    Enemigo*Crearhijo(string ADN);
+    Enemigo*CrearEnemigoADN(string ADN);
 
     ~Evolucionador();
 
