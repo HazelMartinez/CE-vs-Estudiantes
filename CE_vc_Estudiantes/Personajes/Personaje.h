@@ -9,11 +9,11 @@
 
 
 class Personaje {
-
+public:
+    int id=0;
      Enemigo* crearEnemigo(int tipo);
-     //Curso* crearCurso(int tipo);
+//     Curso* crearCurso(int tipo);
 
 };
-
 
 #endif //CE_VS_ESTUDIANTES_PERSONAJE_H

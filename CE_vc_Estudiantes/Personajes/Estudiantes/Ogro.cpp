@@ -4,14 +4,16 @@
 
 #include "Ogro.h"
 #include "Enemigo.h"
-/*
-Ogro::Ogro()
+
+Ogro::Ogro():Enemigo()
 {
     ResistenciaArqueros = 3;
     ResistenciaArtilleros = 1;
     ResistenciaMago = 1;
     ResistenciaLanzaFuego = 1;
     Velocidad = 1;
+    this->CalcularFitness();
+    tipo = 1;
 }
 
-*/
+

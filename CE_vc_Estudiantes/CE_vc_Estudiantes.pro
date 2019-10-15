@@ -28,6 +28,8 @@ SOURCES += \
         Juego.cpp \
         Listas/Lista.cpp \
         Listas/Node.cpp \
+        Listas/NodoMatriz.cpp \
+        Listas/matriz.cpp \
         Personajes/Cursos/Arquero.cpp \
         Personajes/Cursos/Artillero.cpp \
         Personajes/Cursos/Curso.cpp \
@@ -42,14 +44,15 @@ SOURCES += \
         Personajes/Personaje.cpp \
         Tablero.cpp \
         main.cpp \
-        mainwindow.cpp \
-    square.cpp
+        mainwindow.cpp
 
 HEADERS += \
         Evolucionador.h \
         Juego.h \
         Listas/Lista.h \
         Listas/Node.h \
+        Listas/NodoMatriz.h \
+        Listas/matriz.h \
         Personajes/Cursos/Arquero.h \
         Personajes/Cursos/Artillero.h \
         Personajes/Cursos/Curso.h \
@@ -63,8 +66,7 @@ HEADERS += \
         Personajes/Estudiantes/Ogro.h \
         Personajes/Personaje.h \
         Tablero.h \
-        mainwindow.h \
-    square.h
+        mainwindow.h
 
 FORMS += \
         mainwindow.ui

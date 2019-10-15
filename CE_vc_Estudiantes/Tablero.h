@@ -1,28 +1,17 @@
+//
+// Created by abigail on 8/10/19.
+//
+
 #ifndef CE_VS_ESTUDIANTES_TABLERO_H
 #define CE_VS_ESTUDIANTES_TABLERO_H
-#include <QList>
-#include "square.h"
+
+#include "Listas/Lista.h"
 
 
 class Tablero {
-public:
-    // constructors
-    Tablero();
 
-    // getters/setters
-    QList<Square*> getSquares();
-
-    // public methods
-    void placeSquares(int x, int y, int cols, int rows);
-
-private:
-    void createSquareColumn(int x, int y, int numOfRows);
-    QList<Square*> squares;
 
 };
 
 
 #endif //CE_VS_ESTUDIANTES_TABLERO_H
-
-
-

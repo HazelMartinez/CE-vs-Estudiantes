@@ -54,6 +54,8 @@ SOURCES       = ../CE_vc_Estudiantes/Evolucionador.cpp \
 		../CE_vc_Estudiantes/Juego.cpp \
 		../CE_vc_Estudiantes/Listas/Lista.cpp \
 		../CE_vc_Estudiantes/Listas/Node.cpp \
+		../CE_vc_Estudiantes/Listas/NodoMatriz.cpp \
+		../CE_vc_Estudiantes/Listas/matriz.cpp \
 		../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp \
 		../CE_vc_Estudiantes/Personajes/Cursos/Artillero.cpp \
 		../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp \
@@ -68,12 +70,13 @@ SOURCES       = ../CE_vc_Estudiantes/Evolucionador.cpp \
 		../CE_vc_Estudiantes/Personajes/Personaje.cpp \
 		../CE_vc_Estudiantes/Tablero.cpp \
 		../CE_vc_Estudiantes/main.cpp \
-		../CE_vc_Estudiantes/mainwindow.cpp \
-		../CE_vc_Estudiantes/square.cpp moc_mainwindow.cpp
+		../CE_vc_Estudiantes/mainwindow.cpp moc_mainwindow.cpp
 OBJECTS       = Evolucionador.o \
 		Juego.o \
 		Lista.o \
 		Node.o \
+		NodoMatriz.o \
+		matriz.o \
 		Arquero.o \
 		Artillero.o \
 		Curso.o \
@@ -89,7 +92,6 @@ OBJECTS       = Evolucionador.o \
 		Tablero.o \
 		main.o \
 		mainwindow.o \
-		square.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
@@ -145,7 +147,6 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
-		../CE_vc_Estudiantes/.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -169,6 +170,8 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../CE_vc_Estudiantes/Juego.h \
 		../CE_vc_Estudiantes/Listas/Lista.h \
 		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Listas/NodoMatriz.h \
+		../CE_vc_Estudiantes/Listas/matriz.h \
 		../CE_vc_Estudiantes/Personajes/Cursos/Arquero.h \
 		../CE_vc_Estudiantes/Personajes/Cursos/Artillero.h \
 		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h \
@@ -182,11 +185,12 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../CE_vc_Estudiantes/Personajes/Estudiantes/Ogro.h \
 		../CE_vc_Estudiantes/Personajes/Personaje.h \
 		../CE_vc_Estudiantes/Tablero.h \
-		../CE_vc_Estudiantes/mainwindow.h \
-		../CE_vc_Estudiantes/square.h ../CE_vc_Estudiantes/Evolucionador.cpp \
+		../CE_vc_Estudiantes/mainwindow.h ../CE_vc_Estudiantes/Evolucionador.cpp \
 		../CE_vc_Estudiantes/Juego.cpp \
 		../CE_vc_Estudiantes/Listas/Lista.cpp \
 		../CE_vc_Estudiantes/Listas/Node.cpp \
+		../CE_vc_Estudiantes/Listas/NodoMatriz.cpp \
+		../CE_vc_Estudiantes/Listas/matriz.cpp \
 		../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp \
 		../CE_vc_Estudiantes/Personajes/Cursos/Artillero.cpp \
 		../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp \
@@ -201,8 +205,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		../CE_vc_Estudiantes/Personajes/Personaje.cpp \
 		../CE_vc_Estudiantes/Tablero.cpp \
 		../CE_vc_Estudiantes/main.cpp \
-		../CE_vc_Estudiantes/mainwindow.cpp \
-		../CE_vc_Estudiantes/square.cpp
+		../CE_vc_Estudiantes/mainwindow.cpp
 QMAKE_TARGET  = CE_vc_Estudiantes
 DESTDIR       = 
 TARGET        = CE_vc_Estudiantes
@@ -268,7 +271,6 @@ Makefile: ../CE_vc_Estudiantes/CE_vc_Estudiantes.pro /usr/lib/x86_64-linux-gnu/q
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -347,7 +349,6 @@ Makefile: ../CE_vc_Estudiantes/CE_vc_Estudiantes.pro /usr/lib/x86_64-linux-gnu/q
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf:
@@ -386,8 +387,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../CE_vc_Estudiantes/Evolucionador.h ../CE_vc_Estudiantes/Juego.h ../CE_vc_Estudiantes/Listas/Lista.h ../CE_vc_Estudiantes/Listas/Node.h ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.h ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.h ../CE_vc_Estudiantes/Personajes/Cursos/Curso.h ../CE_vc_Estudiantes/Personajes/Cursos/Evaluacion.h ../CE_vc_Estudiantes/Personajes/Cursos/LanzaFuego.h ../CE_vc_Estudiantes/Personajes/Cursos/Mago.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Elfo.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Harpia.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Mercenario.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Ogro.h ../CE_vc_Estudiantes/Personajes/Personaje.h ../CE_vc_Estudiantes/Tablero.h ../CE_vc_Estudiantes/mainwindow.h ../CE_vc_Estudiantes/square.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../CE_vc_Estudiantes/Evolucionador.cpp ../CE_vc_Estudiantes/Juego.cpp ../CE_vc_Estudiantes/Listas/Lista.cpp ../CE_vc_Estudiantes/Listas/Node.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Evaluacion.cpp ../CE_vc_Estudiantes/Personajes/Cursos/LanzaFuego.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Mago.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Elfo.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Harpia.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Mercenario.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Ogro.cpp ../CE_vc_Estudiantes/Personajes/Personaje.cpp ../CE_vc_Estudiantes/Tablero.cpp ../CE_vc_Estudiantes/main.cpp ../CE_vc_Estudiantes/mainwindow.cpp ../CE_vc_Estudiantes/square.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../CE_vc_Estudiantes/Evolucionador.h ../CE_vc_Estudiantes/Juego.h ../CE_vc_Estudiantes/Listas/Lista.h ../CE_vc_Estudiantes/Listas/Node.h ../CE_vc_Estudiantes/Listas/NodoMatriz.h ../CE_vc_Estudiantes/Listas/matriz.h ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.h ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.h ../CE_vc_Estudiantes/Personajes/Cursos/Curso.h ../CE_vc_Estudiantes/Personajes/Cursos/Evaluacion.h ../CE_vc_Estudiantes/Personajes/Cursos/LanzaFuego.h ../CE_vc_Estudiantes/Personajes/Cursos/Mago.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Elfo.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Harpia.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Mercenario.h ../CE_vc_Estudiantes/Personajes/Estudiantes/Ogro.h ../CE_vc_Estudiantes/Personajes/Personaje.h ../CE_vc_Estudiantes/Tablero.h ../CE_vc_Estudiantes/mainwindow.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../CE_vc_Estudiantes/Evolucionador.cpp ../CE_vc_Estudiantes/Juego.cpp ../CE_vc_Estudiantes/Listas/Lista.cpp ../CE_vc_Estudiantes/Listas/Node.cpp ../CE_vc_Estudiantes/Listas/NodoMatriz.cpp ../CE_vc_Estudiantes/Listas/matriz.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Evaluacion.cpp ../CE_vc_Estudiantes/Personajes/Cursos/LanzaFuego.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Mago.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Elfo.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Harpia.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Mercenario.cpp ../CE_vc_Estudiantes/Personajes/Estudiantes/Ogro.cpp ../CE_vc_Estudiantes/Personajes/Personaje.cpp ../CE_vc_Estudiantes/Tablero.cpp ../CE_vc_Estudiantes/main.cpp ../CE_vc_Estudiantes/mainwindow.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../CE_vc_Estudiantes/mainwindow.ui $(DISTDIR)/
 
 
@@ -447,19 +448,43 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
-Evolucionador.o: ../CE_vc_Estudiantes/Evolucionador.cpp ../CE_vc_Estudiantes/Evolucionador.h
+Evolucionador.o: ../CE_vc_Estudiantes/Evolucionador.cpp ../CE_vc_Estudiantes/Evolucionador.h \
+		../CE_vc_Estudiantes/Listas/Lista.h \
+		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Personajes/Personaje.h \
+		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h \
+		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Evolucionador.o ../CE_vc_Estudiantes/Evolucionador.cpp
 
-Juego.o: ../CE_vc_Estudiantes/Juego.cpp ../CE_vc_Estudiantes/Juego.h \
-		../CE_vc_Estudiantes/Tablero.h \
-		../CE_vc_Estudiantes/square.h
+Juego.o: ../CE_vc_Estudiantes/Juego.cpp ../CE_vc_Estudiantes/Juego.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Juego.o ../CE_vc_Estudiantes/Juego.cpp
 
-Lista.o: ../CE_vc_Estudiantes/Listas/Lista.cpp ../CE_vc_Estudiantes/Listas/Lista.h
+Lista.o: ../CE_vc_Estudiantes/Listas/Lista.cpp ../CE_vc_Estudiantes/Listas/Lista.h \
+		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Personajes/Personaje.h \
+		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h \
+		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Lista.o ../CE_vc_Estudiantes/Listas/Lista.cpp
 
 Node.o: ../CE_vc_Estudiantes/Listas/Node.cpp ../CE_vc_Estudiantes/Listas/Node.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Node.o ../CE_vc_Estudiantes/Listas/Node.cpp
+
+NodoMatriz.o: ../CE_vc_Estudiantes/Listas/NodoMatriz.cpp ../CE_vc_Estudiantes/Listas/NodoMatriz.h \
+		../CE_vc_Estudiantes/Listas/Lista.h \
+		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Personajes/Personaje.h \
+		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h \
+		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o NodoMatriz.o ../CE_vc_Estudiantes/Listas/NodoMatriz.cpp
+
+matriz.o: ../CE_vc_Estudiantes/Listas/matriz.cpp ../CE_vc_Estudiantes/Listas/matriz.h \
+		../CE_vc_Estudiantes/Listas/NodoMatriz.h \
+		../CE_vc_Estudiantes/Listas/Lista.h \
+		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Personajes/Personaje.h \
+		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h \
+		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o matriz.o ../CE_vc_Estudiantes/Listas/matriz.cpp
 
 Arquero.o: ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Arquero.o ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp
@@ -467,9 +492,7 @@ Arquero.o: ../CE_vc_Estudiantes/Personajes/Cursos/Arquero.cpp ../CE_vc_Estudiant
 Artillero.o: ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Artillero.o ../CE_vc_Estudiantes/Personajes/Cursos/Artillero.cpp
 
-Curso.o: ../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Curso.h \
-		../CE_vc_Estudiantes/Personajes/Personaje.h \
-		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h
+Curso.o: ../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Curso.o ../CE_vc_Estudiantes/Personajes/Cursos/Curso.cpp
 
 Evaluacion.o: ../CE_vc_Estudiantes/Personajes/Cursos/Evaluacion.cpp ../CE_vc_Estudiantes/Personajes/Cursos/Evaluacion.h
@@ -510,22 +533,27 @@ Personaje.o: ../CE_vc_Estudiantes/Personajes/Personaje.cpp ../CE_vc_Estudiantes/
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Personaje.o ../CE_vc_Estudiantes/Personajes/Personaje.cpp
 
 Tablero.o: ../CE_vc_Estudiantes/Tablero.cpp ../CE_vc_Estudiantes/Tablero.h \
-		../CE_vc_Estudiantes/square.h \
-		../CE_vc_Estudiantes/Juego.h
+		../CE_vc_Estudiantes/Listas/Lista.h \
+		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Personajes/Personaje.h \
+		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h \
+		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Tablero.o ../CE_vc_Estudiantes/Tablero.cpp
 
 main.o: ../CE_vc_Estudiantes/main.cpp ../CE_vc_Estudiantes/mainwindow.h \
-		../CE_vc_Estudiantes/Juego.h \
-		../CE_vc_Estudiantes/Tablero.h \
-		../CE_vc_Estudiantes/square.h
+		../CE_vc_Estudiantes/Listas/Lista.h \
+		../CE_vc_Estudiantes/Listas/Node.h \
+		../CE_vc_Estudiantes/Personajes/Personaje.h \
+		../CE_vc_Estudiantes/Personajes/Estudiantes/Enemigo.h \
+		../CE_vc_Estudiantes/Personajes/Cursos/Curso.h \
+		../CE_vc_Estudiantes/Evolucionador.h \
+		../CE_vc_Estudiantes/Listas/matriz.h \
+		../CE_vc_Estudiantes/Listas/NodoMatriz.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../CE_vc_Estudiantes/main.cpp
 
 mainwindow.o: ../CE_vc_Estudiantes/mainwindow.cpp ../CE_vc_Estudiantes/mainwindow.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../CE_vc_Estudiantes/mainwindow.cpp
-
-square.o: ../CE_vc_Estudiantes/square.cpp ../CE_vc_Estudiantes/square.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o square.o ../CE_vc_Estudiantes/square.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
