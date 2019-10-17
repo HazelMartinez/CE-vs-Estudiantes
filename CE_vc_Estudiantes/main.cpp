@@ -9,7 +9,7 @@
 #include "Evolucionador.h"
 #include "Listas/matriz.h"
 #include "Juego.h"
-
+#include "ventana_inicio.h"
 
 using namespace std;
 
@@ -20,10 +20,11 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    Ventana_Inicio ventana_incio ;
+    ventana_incio.show();
 
-
-    MainWindow w;
-    w.show();
+    //MainWindow w;
+    //w.show();
 
     Personaje p;
     Lista<Enemigo> enemigos;
