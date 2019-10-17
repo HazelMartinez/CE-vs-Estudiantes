@@ -1,14 +1,26 @@
-//
-// Created by abigail on 8/10/19.
-//
-
 #ifndef CE_VS_ESTUDIANTES_JUEGO_H
 #define CE_VS_ESTUDIANTES_JUEGO_H
+#include "mainwindow.h"
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include "tablero.h"
 
+class Juego: public QGraphicsView{
+public:
+    // constructors
+    Juego(QWidget* parent=NULL);
 
-class Juego {
+    // public methods
+    void start();
 
+    // public attributes
+    QGraphicsScene* scene;
+    //Tablero *tablero;
+    MainWindow *ventana;
+
+    //QString whosTurn;
 };
 
 
 #endif //CE_VS_ESTUDIANTES_JUEGO_H
+

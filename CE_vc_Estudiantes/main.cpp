@@ -8,13 +8,23 @@
 #include "Personajes/Personaje.h"
 #include "Evolucionador.h"
 #include "Listas/matriz.h"
+#include "Juego.h"
+
+
 using namespace std;
+
+
+
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+
+
     MainWindow w;
     w.show();
+
     Personaje p;
     Lista<Enemigo> enemigos;
     int num;
