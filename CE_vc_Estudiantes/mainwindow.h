@@ -22,6 +22,13 @@ public:
 
 private slots:
     void draw_matriz();
+    void image_arquero();
+    void image_artillero();
+    void image_magos();
+    void image_lanza_fuego();
+
+
+    void on_push_button_arquero_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -443,7 +443,84 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>261</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="push_button_arquero">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>50</horstretch>
+         <verstretch>50</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Arquero</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="push_button_mago">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Mago</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="push_button_artillero">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Artillero</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="push_button_lanza_fuego">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Lanza Fuego</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>

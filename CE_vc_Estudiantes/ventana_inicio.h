@@ -15,6 +15,11 @@ public:
     explicit Ventana_Inicio(QWidget *parent = 0);
     ~Ventana_Inicio();
 
+private slots:
+    void on_pushButton_individual_win_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Ventana_Inicio *ui;
 };
