@@ -30,6 +30,12 @@ private slots:
 
     void on_push_button_arquero_clicked();
 
+    void on_push_button_mago_clicked();
+
+    void on_push_button_artillero_clicked();
+
+    void on_push_button_lanza_fuego_clicked();
+
 private:
     Ui::MainWindow *ui;
     Matriz <Personaje> *matriz=new Matriz<Personaje>();

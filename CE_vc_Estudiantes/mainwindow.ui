@@ -40,45 +40,45 @@
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Light">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>24</red>
-        <green>118</green>
-        <blue>127</blue>
+        <red>1</red>
+        <green>48</green>
+        <blue>22</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>20</red>
-        <green>98</green>
-        <blue>106</blue>
+        <red>1</red>
+        <green>40</green>
+        <blue>18</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>10</red>
-        <green>52</green>
-        <blue>56</blue>
+        <red>0</red>
+        <green>21</green>
+        <blue>10</blue>
        </color>
       </brush>
      </colorrole>
@@ -121,9 +121,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
@@ -139,9 +139,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
@@ -177,45 +177,45 @@
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Light">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>24</red>
-        <green>118</green>
-        <blue>127</blue>
+        <red>1</red>
+        <green>48</green>
+        <blue>22</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>20</red>
-        <green>98</green>
-        <blue>106</blue>
+        <red>1</red>
+        <green>40</green>
+        <blue>18</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>10</red>
-        <green>52</green>
-        <blue>56</blue>
+        <red>0</red>
+        <green>21</green>
+        <blue>10</blue>
        </color>
       </brush>
      </colorrole>
@@ -258,9 +258,9 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
@@ -276,9 +276,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
@@ -305,63 +305,63 @@
      <colorrole role="WindowText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Button">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Light">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>24</red>
-        <green>118</green>
-        <blue>127</blue>
+        <red>1</red>
+        <green>48</green>
+        <blue>22</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Midlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>20</red>
-        <green>98</green>
-        <blue>106</blue>
+        <red>1</red>
+        <green>40</green>
+        <blue>18</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Dark">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Mid">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>10</red>
-        <green>52</green>
-        <blue>56</blue>
+        <red>0</red>
+        <green>21</green>
+        <blue>10</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Text">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
@@ -377,27 +377,27 @@
      <colorrole role="ButtonText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>8</red>
-        <green>39</green>
-        <blue>42</blue>
+        <red>0</red>
+        <green>16</green>
+        <blue>7</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
@@ -413,9 +413,9 @@
      <colorrole role="AlternateBase">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>16</red>
-        <green>79</green>
-        <blue>85</blue>
+        <red>1</red>
+        <green>32</green>
+        <blue>15</blue>
        </color>
       </brush>
      </colorrole>
@@ -468,6 +468,12 @@
          <height>150</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Arquero</string>
        </property>
@@ -487,6 +493,12 @@
          <height>150</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>19</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Mago</string>
        </property>
@@ -500,6 +512,12 @@
          <height>150</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Artillero</string>
        </property>
@@ -512,6 +530,12 @@
          <width>50</width>
          <height>150</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>16</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>Lanza Fuego</string>
