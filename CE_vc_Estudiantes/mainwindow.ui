@@ -544,6 +544,25 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="push_button_estadisticas">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>880</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman L</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Estadisticas</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

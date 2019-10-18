@@ -26,6 +26,7 @@ private slots:
     void image_artillero();
     void image_magos();
     void image_lanza_fuego();
+    void settings_boton_estadisticas();
 
 
     void on_push_button_arquero_clicked();

@@ -25,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent) :
     image_artillero();
     image_magos();
     image_lanza_fuego();
+    settings_boton_estadisticas();
 
     QPixmap bkgnd("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/Imagenes/fondo_total_f.png");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
@@ -104,6 +105,11 @@ void MainWindow::image_lanza_fuego(){
     ui->push_button_lanza_fuego->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
     ui->push_button_lanza_fuego->setIcon(QIcon("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/images_towers/lanza_fuego.png"));
     ui->push_button_lanza_fuego->setIconSize(QSize(150, 150));
+
+}
+
+void MainWindow::settings_boton_estadisticas(){
+    ui->push_button_estadisticas->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
 
 }
 
