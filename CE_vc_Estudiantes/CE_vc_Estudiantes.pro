@@ -45,7 +45,8 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     tablero.cpp \
-    ventana_inicio.cpp
+    ventana_inicio.cpp \
+    estadisticaswindow.cpp
 
 HEADERS += \
         Evolucionador.h \
@@ -68,8 +69,10 @@ HEADERS += \
         Personajes/Personaje.h \
         mainwindow.h \
     tablero.h \
-    ventana_inicio.h
+    ventana_inicio.h \
+    estadisticaswindow.h
 
 FORMS += \
         mainwindow.ui \
-    ventana_inicio.ui
+    ventana_inicio.ui \
+    estadisticaswindow.ui

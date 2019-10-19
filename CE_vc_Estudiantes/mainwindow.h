@@ -37,6 +37,8 @@ private slots:
 
     void on_push_button_lanza_fuego_clicked();
 
+    void on_push_button_estadisticas_clicked();
+
 private:
     Ui::MainWindow *ui;
     Matriz <Personaje> *matriz=new Matriz<Personaje>();

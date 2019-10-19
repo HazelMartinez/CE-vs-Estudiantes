@@ -10,6 +10,9 @@
 #include "QGraphicsScene"
 #include "QPixmap"
 #include "QIcon"
+#include "estadisticaswindow.h"
+
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -131,4 +134,11 @@ void MainWindow::on_push_button_artillero_clicked()
 void MainWindow::on_push_button_lanza_fuego_clicked()
 {
     cout<<"You have push Lanza Fuego"<<endl;
+}
+
+void MainWindow::on_push_button_estadisticas_clicked()
+{
+    EstadisticasWindow *ventana_estadisticas = new EstadisticasWindow;
+    ventana_estadisticas->show();
+
 }
