@@ -28,6 +28,8 @@ MainWindow::MainWindow(QWidget *parent) :
     image_artillero();
     image_magos();
     image_lanza_fuego();
+    image_coin();
+
     settings_boton_estadisticas();
 
     QPixmap bkgnd("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/Imagenes/fondo_total_f.png");
@@ -93,8 +95,6 @@ void MainWindow::image_magos(){
     ui->push_button_mago->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
     ui->push_button_mago->setIcon(QIcon("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/images_towers/mago1_1.png"));
     ui->push_button_mago->setIconSize(QSize(150, 150));
-
-
 }
 
 void MainWindow::image_lanza_fuego(){
@@ -108,6 +108,18 @@ void MainWindow::image_lanza_fuego(){
     ui->push_button_lanza_fuego->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
     ui->push_button_lanza_fuego->setIcon(QIcon("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/images_towers/lanza_fuego.png"));
     ui->push_button_lanza_fuego->setIconSize(QSize(150, 150));
+
+}
+
+void MainWindow::image_coin(){
+    QPalette Pal(palette());
+    // Asignar el color de fondo como Negro
+    Pal.setColor(QPalette::Background, Qt::transparent);
+    ui->pushButton_coin->setAutoFillBackground(true);
+    ui->pushButton_coin->setPalette(Pal);
+    //ui->pushButton_coin->setStyleSheet("QPushButton{background: transparent;}");
+    ui->pushButton_coin->setIcon(QIcon("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/images_towers/skull_coin.png"));
+    ui->pushButton_coin->setIconSize(QSize(150, 150));
 
 }
 

@@ -447,13 +447,16 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>20</x>
       <y>30</y>
       <width>261</width>
-      <height>691</height>
+      <height>841</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>40</number>
+     </property>
      <item>
       <widget class="QPushButton" name="push_button_arquero">
        <property name="sizePolicy">
@@ -542,15 +545,22 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_coin">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="push_button_estadisticas">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>880</y>
-      <width>141</width>
-      <height>41</height>
+      <x>20</x>
+      <y>890</y>
+      <width>131</width>
+      <height>34</height>
      </rect>
     </property>
     <property name="font">
