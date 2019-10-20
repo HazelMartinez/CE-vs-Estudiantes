@@ -31,12 +31,13 @@ MainWindow::MainWindow(QWidget *parent) :
     image_coin();
 
     settings_boton_estadisticas();
-
+/*
     QPixmap bkgnd(this->ruta+"tower_images/image_grid.png");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
+*/
 }
 
 MainWindow::~MainWindow()
