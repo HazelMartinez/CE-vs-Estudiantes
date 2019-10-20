@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     settings_boton_estadisticas();
 
-    QPixmap bkgnd(this->ruta+"tower_images/fondo_total_f.png");
+    QPixmap bkgnd(this->ruta+"tower_images/image_grid.png");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);

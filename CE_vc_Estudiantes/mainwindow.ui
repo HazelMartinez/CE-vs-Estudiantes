@@ -447,15 +447,21 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>261</width>
+      <x>0</x>
+      <y>40</y>
+      <width>181</width>
       <height>841</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="spacing">
       <number>40</number>
+     </property>
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
      </property>
      <item>
       <widget class="QPushButton" name="push_button_arquero">
@@ -474,11 +480,11 @@
        <property name="font">
         <font>
          <family>URW Bookman L</family>
-         <pointsize>16</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Arquero</string>
+        <string/>
        </property>
        <property name="iconSize">
         <size>
@@ -503,7 +509,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Mago</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -522,7 +528,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Artillero</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -537,11 +543,11 @@
        <property name="font">
         <font>
          <family>URW Bookman L</family>
-         <pointsize>16</pointsize>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Lanza Fuego</string>
+        <string/>
        </property>
       </widget>
      </item>
