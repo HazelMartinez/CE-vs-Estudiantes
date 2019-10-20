@@ -46,7 +46,31 @@ SOURCES += \
         mainwindow.cpp \
     tablero.cpp \
     ventana_inicio.cpp \
-    estadisticaswindow.cpp
+    estadisticaswindow.cpp \
+    Listas/Lista.cpp \
+    Listas/matriz.cpp \
+    Listas/Node.cpp \
+    Listas/NodoMatriz.cpp \
+    Personajes/Cursos/Arquero.cpp \
+    Personajes/Cursos/Artillero.cpp \
+    Personajes/Cursos/Curso.cpp \
+    Personajes/Cursos/Evaluacion.cpp \
+    Personajes/Cursos/LanzaFuego.cpp \
+    Personajes/Cursos/Mago.cpp \
+    Personajes/Estudiantes/Elfo.cpp \
+    Personajes/Estudiantes/Enemigo.cpp \
+    Personajes/Estudiantes/Harpia.cpp \
+    Personajes/Estudiantes/Mercenario.cpp \
+    Personajes/Estudiantes/Ogro.cpp \
+    Personajes/Personaje.cpp \
+    estadisticaswindow.cpp \
+    Evolucionador.cpp \
+    Juego.cpp \
+    main.cpp \
+    mainwindow.cpp \
+    tablero.cpp \
+    Tablero.cpp \
+    ventana_inicio.cpp
 
 HEADERS += \
         Evolucionador.h \
@@ -70,7 +94,30 @@ HEADERS += \
         mainwindow.h \
     tablero.h \
     ventana_inicio.h \
-    estadisticaswindow.h
+    estadisticaswindow.h \
+    Listas/Lista.h \
+    Listas/matriz.h \
+    Listas/Node.h \
+    Listas/NodoMatriz.h \
+    Personajes/Cursos/Arquero.h \
+    Personajes/Cursos/Artillero.h \
+    Personajes/Cursos/Curso.h \
+    Personajes/Cursos/Evaluacion.h \
+    Personajes/Cursos/LanzaFuego.h \
+    Personajes/Cursos/Mago.h \
+    Personajes/Estudiantes/Elfo.h \
+    Personajes/Estudiantes/Enemigo.h \
+    Personajes/Estudiantes/Harpia.h \
+    Personajes/Estudiantes/Mercenario.h \
+    Personajes/Estudiantes/Ogro.h \
+    Personajes/Personaje.h \
+    estadisticaswindow.h \
+    Evolucionador.h \
+    Juego.h \
+    mainwindow.h \
+    Tablero.h \
+    tablero.h \
+    ventana_inicio.h
 
 FORMS += \
         mainwindow.ui \

@@ -6,7 +6,7 @@
 #include "Listas/matriz.h"
 #include "mainwindow.h"
 
-extern Juego *juego;
+//extern Juego *juego;
 
 /*
 

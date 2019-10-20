@@ -4,20 +4,20 @@
 
 #include "Enemigo.h"
 
-Enemigo::Enemigo()
-{
+//Enemigo::Enemigo()
+//{
 
-}
+//}
 
-void Enemigo::CalcularFitness()
-{
-    fitness = (this->ResistenciaMago + this->ResistenciaArqueros
-            + this->ResistenciaArtilleros + this->ResistenciaLanzaFuego
-            + this->Velocidad);
+//void Enemigo::CalcularFitness()
+//{
+//    fitness = (this->ResistenciaMago + this->ResistenciaArqueros
+//            + this->ResistenciaArtilleros + this->ResistenciaLanzaFuego
+//            + this->Velocidad);
 
-}
+//}
 
-Enemigo::~Enemigo()
-{
+//Enemigo::~Enemigo()
+//{
 
-}
+//}

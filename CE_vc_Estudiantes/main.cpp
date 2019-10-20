@@ -71,10 +71,10 @@ int main(int argc, char *argv[])
 
     }
 
-    Evolucionador * uno = Evolucionador::getInstance();
-    cout<< uno->Mutacion(enemigos.get(0)).ResistenciaMago<<endl;
-    cout<< uno->Mutacion(enemigos.get(0)).ResistenciaArtilleros<<endl;
-    cout<< uno->Inversion(enemigos.get(0)).ResistenciaArtilleros<<endl;
+//    Evolucionador * uno = Evolucionador::getInstance();
+//    cout<< uno->Mutacion(enemigos.get(0)).ResistenciaMago<<endl;
+//    cout<< uno->Mutacion(enemigos.get(0)).ResistenciaArtilleros<<endl;
+//    cout<< uno->Inversion(enemigos.get(0)).ResistenciaArtilleros<<endl;
 
 
 

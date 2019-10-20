@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     settings_boton_estadisticas();
 
-    QPixmap bkgnd("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/Imagenes/fondo_total_f.png");
+    QPixmap bkgnd("/home/hazel/Escritorio/CE_proyecto3_datos/CE-vs-Estudiantes/build-CE_vc_Estudiantes-Desktop-Debug/images_towers/fondo_total_f.png");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
