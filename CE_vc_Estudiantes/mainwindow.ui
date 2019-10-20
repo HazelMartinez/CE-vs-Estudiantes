@@ -450,7 +450,7 @@
       <x>0</x>
       <y>40</y>
       <width>181</width>
-      <height>841</height>
+      <height>861</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -558,26 +558,20 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="push_button_estadisticas">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Estadisticas</string>
+       </property>
+      </widget>
+     </item>
     </layout>
-   </widget>
-   <widget class="QPushButton" name="push_button_estadisticas">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>890</y>
-      <width>131</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>URW Bookman L</family>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Estadisticas</string>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
