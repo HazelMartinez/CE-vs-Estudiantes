@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     settings_boton_estadisticas();
 
-    QPixmap bkgnd("/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/tower_images/fondo_total_f.png");
+    QPixmap bkgnd(this->ruta+"tower_images/fondo_total_f.png");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
@@ -64,7 +64,7 @@ void MainWindow::image_arquero(){
 //    ui->push_button_arquero->update();
 
     ui->push_button_arquero->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
-    ui->push_button_arquero->setIcon(QIcon("/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/tower_images/arquero1.png"));
+    ui->push_button_arquero->setIcon(QIcon(this->ruta+"tower_images/arquero1.png"));
     ui->push_button_arquero->setIconSize(QSize(150, 150));
 
 
@@ -79,7 +79,7 @@ void MainWindow::image_artillero(){
 //    ui->push_button_artillero->update();
 
     ui->push_button_artillero->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
-    ui->push_button_artillero->setIcon(QIcon("/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/tower_images/artillero1_1.png"));
+    ui->push_button_artillero->setIcon(QIcon(this->ruta+"tower_images/artillero1_1.png"));
     ui->push_button_artillero->setIconSize(QSize(150, 150));
 
 }
@@ -93,7 +93,7 @@ void MainWindow::image_magos(){
 //    ui->push_button_mago->update();
 
     ui->push_button_mago->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
-    ui->push_button_mago->setIcon(QIcon("/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/tower_images/mago1_1.png"));
+    ui->push_button_mago->setIcon(QIcon(this->ruta+"tower_images/mago1_1.png"));
     ui->push_button_mago->setIconSize(QSize(150, 150));
 }
 
@@ -106,7 +106,7 @@ void MainWindow::image_lanza_fuego(){
 //    ui->push_button_lanza_fuego->update();
 
     ui->push_button_lanza_fuego->setStyleSheet("QPushButton {background-color:#01200F; color: white;}");
-    ui->push_button_lanza_fuego->setIcon(QIcon("/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/tower_images/lanza_fuego.png"));
+    ui->push_button_lanza_fuego->setIcon(QIcon(this->ruta+"tower_images/lanza_fuego.png"));
     ui->push_button_lanza_fuego->setIconSize(QSize(150, 150));
 
 }
@@ -118,7 +118,7 @@ void MainWindow::image_coin(){
     ui->pushButton_coin->setAutoFillBackground(true);
     ui->pushButton_coin->setPalette(Pal);
     //ui->pushButton_coin->setStyleSheet("QPushButton{background: transparent;}");
-    ui->pushButton_coin->setIcon(QIcon("/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/tower_images/skull_coin.png"));
+    ui->pushButton_coin->setIcon(QIcon(this->ruta+"tower_images/skull_coin.png"));
     ui->pushButton_coin->setIconSize(QSize(150, 150));
 
 }

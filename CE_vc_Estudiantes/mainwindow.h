@@ -44,6 +44,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QString ruta="/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/";
     Matriz <Personaje> *matriz=new Matriz<Personaje>();
 };
 
