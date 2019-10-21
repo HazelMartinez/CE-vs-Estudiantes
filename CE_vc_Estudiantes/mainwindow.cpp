@@ -6,12 +6,24 @@
 #include "QWidget"
 #include "QRectF"
 #include "QPushButton"
+#include "QLabel"
 #include "QHBoxLayout"
 #include "QGraphicsScene"
 #include "QPixmap"
 #include "QIcon"
 #include "estadisticaswindow.h"
+#include <unistd.h>
+#include <pthread.h>
+#include "QPalette"
 
+void MainWindow::mousePressEvent(QMouseEvent *event)
+{
+    int shiftx=62,shifty=29;
+    int x=cursor->pos().x()-933-shiftx,y=cursor->pos().y()-46-shifty;
+    cout<<"Posición X:"<<cursor->pos().x() <<" Posición Y:"<<cursor->pos().y()<<endl;
+    ColocarImagen(x,y);
+    //ColocarImagen(QCursor::pos().x(),QCursor::pos().y());
+}
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -31,19 +43,72 @@ MainWindow::MainWindow(QWidget *parent) :
     image_coin();
 
     settings_boton_estadisticas();
-/*
+
     QPixmap bkgnd(this->ruta+"tower_images/image_grid.png");
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
-*/
+    this->mapFromGlobal(QCursor::pos());
+
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::ColocarImagen(int x, int y)
+{
+    QLabel *imagen=new QLabel(this);//=new QLabel();
+    QPixmap pixmap(this->ruta+"tower_images/image_grid.png");
+    imagen->setPixmap(pixmap);
+    imagen->setFixedSize(135, 70);
+    imagen->move(x, y); //ensure that this coordinates are in you widget
+    imagen->show();
+
+    // cuando se coloca una una torre esta debe de enviar cada cierto tiempo una bala
+    struct thread_data *argumentos;
+    argumentos->x=x;
+    argumentos->y=y;
+    argumentos->velocidad=50000;
+    pthread_t thread1;
+    pthread_create(&thread1,nullptr,AnimacionHaciaAbajo,nullptr);
+
+    cout<<"poniendo imagen";
+
+}
+
+  void* MainWindow::AnimacionHaciaAbajo(void * argumentos)//(int x,int y, int velocidad)
+{
+    struct thread_data *a;
+    a=(struct thread_data*)argumentos;
+
+    int x=a->x,y=a->y;
+    QLabel *imagen=new QLabel(this);//=new QLabel();
+    QPixmap pixmap(this->ruta+"tower_images/image_grid.png");
+    imagen->setPixmap(pixmap);
+    imagen->setFixedSize(30, 30);
+    int movimiento=5;
+    while (y<400) { // aquí hay que agregar que en la posición no esté un curso
+        y=y+movimiento;
+        imagen->move(x, y); //ensure that this coordinates are in you widget
+        imagen->show();
+        usleep(a->velocidad);
+    }
+
+
+
+
+    cout<<"poniendo imagen";
+  }
+
+  void *MainWindow::prueba()
+  {
+
+  }
+
 
 void MainWindow::draw_matriz(){
     //QGridLayout *matriz_lay = QGridLayout(ui->centralWidget);
@@ -131,6 +196,7 @@ void MainWindow::settings_boton_estadisticas(){
 
 void MainWindow::on_push_button_arquero_clicked()
 {
+
     cout<<"You have push Arquero"<<endl;
 }
 

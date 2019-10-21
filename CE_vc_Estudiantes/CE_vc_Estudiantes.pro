@@ -76,6 +76,3 @@ FORMS += \
         mainwindow.ui \
     ventana_inicio.ui \
     estadisticaswindow.ui
-
-RESOURCES += \
-    resorce.qrc

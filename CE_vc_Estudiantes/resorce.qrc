@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/img">
-        <file>tower_images/image_grid.png</file>
-    </qresource>
-</RCC>

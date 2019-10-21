@@ -6,20 +6,30 @@
 #include "QGridLayout"
 #include <QGraphicsView>
 #include <QGraphicsScene>
+#include <QWidget>
 
 namespace Ui {
 class MainWindow;
+class Widget;
 }
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+protected:
+    void mousePressEvent(QMouseEvent *event) override;
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    struct thread_data {
+       int  x,y,velocidad;
+
+    };
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QGraphicsScene* scene;
-
+    void ColocarImagen(int x,int y);
+    void* AnimacionHaciaAbajo(void*  argumentos);
+    void *prueba();
 private slots:
     void draw_matriz();
     void image_arquero();
@@ -27,6 +37,8 @@ private slots:
     void image_magos();
     void image_lanza_fuego();
     void image_coin();
+
+
 
     void settings_boton_estadisticas();
 
@@ -44,6 +56,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QCursor *cursor;
     QString ruta="/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/";
     Matriz <Personaje> *matriz=new Matriz<Personaje>();
 };
