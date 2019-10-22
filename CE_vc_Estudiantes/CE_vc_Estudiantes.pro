@@ -42,9 +42,11 @@ SOURCES += \
         Personajes/Estudiantes/Mercenario.cpp \
         Personajes/Estudiantes/Ogro.cpp \
         Personajes/Personaje.cpp \
-        Tablero.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    tablero.cpp \
+    ventana_inicio.cpp \
+    estadisticaswindow.cpp
 
 HEADERS += \
         Evolucionador.h \
@@ -65,8 +67,12 @@ HEADERS += \
         Personajes/Estudiantes/Mercenario.h \
         Personajes/Estudiantes/Ogro.h \
         Personajes/Personaje.h \
-        Tablero.h \
-        mainwindow.h
+        mainwindow.h \
+    tablero.h \
+    ventana_inicio.h \
+    estadisticaswindow.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    ventana_inicio.ui \
+    estadisticaswindow.ui

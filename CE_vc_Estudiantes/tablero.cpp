@@ -1,14 +1,12 @@
-//
-// Created by abigail on 8/10/19.
-//
-
-#include "Tablero.h"
+#include "tablero.h"
 #include "Listas/matriz.h"
 #include "mainwindow.h"
 
 extern Juego *juego;
+Tablero::Tablero()
+{
 
-/*
+}
 
 Matriz<Personaje>* Tablero::Create_matrix(){
     //QWidget* central_matriz = new QWidget(centralWidget);
@@ -24,7 +22,7 @@ Matriz<Personaje>* Tablero::Create_matrix(){
         QRectF *square = new QRectF(10,10,square_width,square_height);
         //QRectF r2(QPointF(100.0, 200.1), QSizeF(11.2, 16.3));
         x = x + square_width + 5;
-        juego->scene->addItem(square);
+        //juego->scene->addItem(square);
 
     }
 
@@ -33,4 +31,3 @@ Matriz<Personaje>* Tablero::Create_matrix(){
 
 
 }
-*/
