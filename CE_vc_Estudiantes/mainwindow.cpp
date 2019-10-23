@@ -14,12 +14,11 @@
 #include "estadisticaswindow.h"
 #include <unistd.h>
 #include <pthread.h>
-#include "QPalette"
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     int shiftx=62,shifty=29;
-    int x=cursor->pos().x()-933-shiftx,y=cursor->pos().y()-46-shifty;
+    int x=MapeadorX(cursor->pos().x()),y= MapeadorY(cursor->pos().y());
     cout<<"Posición X:"<<cursor->pos().x() <<" Posición Y:"<<cursor->pos().y()<<endl;
     ColocarImagen(x,y);
     //ColocarImagen(QCursor::pos().x(),QCursor::pos().y());
@@ -49,7 +48,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
-    this->mapFromGlobal(QCursor::pos());
+    //this->mapFromGlobal(QCursor::pos());
 
 
 }
@@ -62,19 +61,22 @@ MainWindow::~MainWindow()
 void MainWindow::ColocarImagen(int x, int y)
 {
     QLabel *imagen=new QLabel(this);//=new QLabel();
-    QPixmap pixmap(this->ruta+"tower_images/image_grid.png");
+    if (this->clickedPersonaje!="" && x>150 && y>60 && x<1670 &&y<970)
+    {
+    QPixmap pixmap(this->ruta+"tower_images/"+this->clickedPersonaje);
     imagen->setPixmap(pixmap);
     imagen->setFixedSize(135, 70);
-    imagen->move(x, y); //ensure that this coordinates are in you widget
+    imagen->move(x,y); //ensure that this coordinates are in you widget
     imagen->show();
-
+    this->clickedPersonaje="";
+    }
     // cuando se coloca una una torre esta debe de enviar cada cierto tiempo una bala
-    struct thread_data *argumentos;
-    argumentos->x=x;
-    argumentos->y=y;
-    argumentos->velocidad=50000;
-    pthread_t thread1;
-    pthread_create(&thread1,nullptr,AnimacionHaciaAbajo,nullptr);
+    //struct thread_data *argumentos;
+    //argumentos->x=x;
+    //argumentos->y=y;
+    //argumentos->velocidad=50000;
+    //pthread_t thread1;
+    //pthread_create(&thread1,nullptr,AnimacionHaciaAbajo,nullptr);
 
     cout<<"poniendo imagen";
 
@@ -107,6 +109,78 @@ void MainWindow::ColocarImagen(int x, int y)
   void *MainWindow::prueba()
   {
 
+  }
+
+  int MainWindow::MapeadorX(int x)
+  {
+      int valorFinalx=0, shift=243-195;
+      if (x>=243 && x<=388){
+          valorFinalx=243;
+      }
+      else if (x<=563 && x>=388){
+          valorFinalx=388;
+      }
+      else if (x<=722 && x>=563){
+          valorFinalx=563;
+      }
+      else if (x<=878 && x>=722){
+          valorFinalx=722;
+      }
+      else if (x<=1036 && x>=878){
+          valorFinalx=878;
+      }
+      else if (x<=1198 && x>=1036){
+          valorFinalx=1036;
+      }
+      else if (x<=1358 && x>=1198){
+          valorFinalx=1198;
+      }
+      else if (x<=1509 && x>=1358){
+          valorFinalx=1358;
+      }
+      else if (x<=1679 && x>=1509){
+          valorFinalx=1509;
+      }
+      else if (x<=1800 && x>=1679){
+          valorFinalx=1679;
+      }
+      return valorFinalx-shift;
+  }
+
+  int MainWindow::MapeadorY(int y)
+  {
+      int valorFinaly=0,shift=45;
+      if (y>=120 && y<=207){
+          valorFinaly=120;
+      }
+      else if (y<=281 && y>=207){
+          valorFinaly=207;
+      }
+      else if (y<=368 && y>=281){
+          valorFinaly=281;
+      }
+      else if (y<=453 && y>=368){
+          valorFinaly=368;
+      }
+      else if (y<=534 && y>=453){
+          valorFinaly=453;
+      }
+      else if (y<=619 && y>=534){
+          valorFinaly=534;
+      }
+      else if (y<=713 && y>=619){
+          valorFinaly=619;
+      }
+      else if (y<=803 && y>=713){
+          valorFinaly=713;
+      }
+      else if (y<=893 && y>=803){
+          valorFinaly=803;
+      }
+      else if (y<=973 && y>=893){
+          valorFinaly=893;
+      }
+      return valorFinaly-shift;
   }
 
 
@@ -196,22 +270,25 @@ void MainWindow::settings_boton_estadisticas(){
 
 void MainWindow::on_push_button_arquero_clicked()
 {
-
+    this->clickedPersonaje="arquero11.png";
     cout<<"You have push Arquero"<<endl;
 }
 
 void MainWindow::on_push_button_mago_clicked()
 {
+    this->clickedPersonaje="mago11.png";
     cout<<"You have push Mago "<<endl;
 }
 
 void MainWindow::on_push_button_artillero_clicked()
 {
+    this->clickedPersonaje="artillero11.png";
     cout<<"You have push Artillero"<<endl;
 }
 
 void MainWindow::on_push_button_lanza_fuego_clicked()
 {
+    this->clickedPersonaje="lanza_fuego1.png";
     cout<<"You have push Lanza Fuego"<<endl;
 }
 

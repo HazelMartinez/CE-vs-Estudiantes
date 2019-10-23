@@ -8,6 +8,7 @@
 #include <QGraphicsScene>
 #include <QWidget>
 
+
 namespace Ui {
 class MainWindow;
 class Widget;
@@ -30,6 +31,8 @@ public:
     void ColocarImagen(int x,int y);
     void* AnimacionHaciaAbajo(void*  argumentos);
     void *prueba();
+    int MapeadorX(int x);
+    int MapeadorY(int y);
 private slots:
     void draw_matriz();
     void image_arquero();
@@ -57,7 +60,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QCursor *cursor;
-    QString ruta="/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/";
+    QString clickedPersonaje="";
+    QString ruta="/home/hazel/Vídeos/CE-vs-Estudiantes/CE_vc_Estudiantes/";
     Matriz <Personaje> *matriz=new Matriz<Personaje>();
 };
 
