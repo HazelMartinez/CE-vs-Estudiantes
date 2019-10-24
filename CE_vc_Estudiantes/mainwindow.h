@@ -25,7 +25,6 @@ public:
        int  x,y,velocidad;
 
     };
-
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QGraphicsScene* scene;

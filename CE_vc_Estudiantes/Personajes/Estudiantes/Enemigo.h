@@ -27,7 +27,6 @@ public:
        void reprobar();
        void validar();
        void CalcularFitness();
-
        ~Enemigo();
 
 };

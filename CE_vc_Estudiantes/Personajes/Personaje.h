@@ -7,6 +7,7 @@
 
 class Personaje {
 public:
+    int id=0;
      Enemigo* crearEnemigo(int tipo);
 //     Curso* crearCurso(int tipo);
 

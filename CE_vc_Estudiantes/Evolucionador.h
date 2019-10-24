@@ -22,8 +22,6 @@ public:
     static Evolucionador* getInstance();
     Evolucionador(const Evolucionador*) = delete;
     Evolucionador* operator = (const Evolucionador*) = delete;
-    string ObtenerADN(Enemigo sujeto);
-    Enemigo*CrearEnemigoADN(string ADN);
 
     ~Evolucionador();
 

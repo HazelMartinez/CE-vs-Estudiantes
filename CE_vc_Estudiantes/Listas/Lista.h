@@ -7,7 +7,7 @@
 #include <stdlib.h>
 
 #include "Node.h"
-
+#include "Personajes/Personaje.h"
 using namespace std;
 
 template <class T>
@@ -164,9 +164,11 @@ template<typename T>
 void Lista<T>::print() {
         Node<T> *temp = this->head;
         while (temp != NULL) {
-            std::cout << temp->Data << " ";
+            std::cout << ((Personaje)temp->Data ).id<< ",";
             temp = temp->next;
         }
+        std::cout<< endl;
+        std::cout<< " ---------------------------"<<endl;
     }
 
 
