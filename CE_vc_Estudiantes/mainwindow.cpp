@@ -19,8 +19,11 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     int shiftx=62,shifty=29;
     int x=MapeadorX(cursor->pos().x()),y= MapeadorY(cursor->pos().y());
+    int mapa_x = Definicion_MapaX(cursor->pos().x()), mapa_y= Definicion_MapaY(cursor->pos().y());
     cout<<"Posición X:"<<cursor->pos().x() <<" Posición Y:"<<cursor->pos().y()<<endl;
+    cout<<"LA POSICION PRESIONADA ES: ("<<mapa_x<<" , "<<mapa_y<<" )"<<endl;
     ColocarImagen(x,y);
+
     //ColocarImagen(QCursor::pos().x(),QCursor::pos().y());
 }
 
@@ -182,6 +185,77 @@ void MainWindow::ColocarImagen(int x, int y)
       }
       return valorFinaly-shift;
   }
+
+int MainWindow::Definicion_MapaX(int mapa_x){
+    int posX=0;
+    if(mapa_x >=243 && mapa_x <=388){
+        posX = 0;
+    }
+    else if(mapa_x<=563 && mapa_x>=388){
+        posX = 1;
+    }
+    else if(mapa_x<=722 && mapa_x>=563){
+        posX = 2;
+    }
+    else if(mapa_x<=878 && mapa_x>=722){
+        posX = 3;
+    }
+    else if(mapa_x<=1036 && mapa_x>=878){
+        posX = 4;
+    }
+    else if(mapa_x<=1198 && mapa_x>=1036){
+        posX = 5;
+    }
+    else if(mapa_x<=1358 && mapa_x>=1198){
+        posX = 6;
+    }
+    else if(mapa_x<=1509 && mapa_x>=1358){
+        posX = 7;
+    }
+    else if(mapa_x<=1679 && mapa_x>=1509){
+        posX = 8;
+    }
+    else if(mapa_x<=1800 && mapa_x>=1679){
+        posX = 9;
+    }
+
+    return posX;
+}
+
+int MainWindow::Definicion_MapaY(int mapa_y){
+    int posY=0;
+    if (mapa_y>=120 && mapa_y<=207){
+        posY=0;
+    }
+    else if (mapa_y<=281 && mapa_y>=207){
+        posY=1;
+    }
+    else if (mapa_y<=368 && mapa_y>=281){
+        posY=2;
+    }
+    else if (mapa_y<=453 && mapa_y>=368){
+        posY=3;
+    }
+    else if (mapa_y<=534 && mapa_y>=453){
+        posY=4;
+    }
+    else if (mapa_y<=619 && mapa_y>=534){
+        posY=5;
+    }
+    else if (mapa_y<=713 && mapa_y>=619){
+        posY=6;
+    }
+    else if (mapa_y<=803 && mapa_y>=713){
+        posY=7;
+    }
+    else if (mapa_y<=893 && mapa_y>=803){
+        posY=8;
+    }
+    else if (mapa_y<=973 && mapa_y>=893){
+        posY=9;
+    }
+    return posY;
+}
 
 
 void MainWindow::draw_matriz(){

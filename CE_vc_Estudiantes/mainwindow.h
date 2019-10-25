@@ -33,6 +33,9 @@ public:
     void *prueba();
     int MapeadorX(int x);
     int MapeadorY(int y);
+    int Definicion_MapaX(int mapa_x);
+    int Definicion_MapaY(int mapa_y);
+
 private slots:
     void draw_matriz();
     void image_arquero();
