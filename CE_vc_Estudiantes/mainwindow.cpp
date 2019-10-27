@@ -16,6 +16,9 @@
 #include <pthread.h>
 #include <Listas/matriz.h>
 #include "Personajes/Cursos/arquero.h"
+#include "Personajes/Cursos/artillero.h"
+#include "Personajes/Cursos/mago.h"
+#include "Personajes/Cursos/lanza_fuego.h"
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
@@ -107,16 +110,22 @@ void MainWindow::ColocarImagen(int x, int y)
     if (this->clickedPersonaje=="arquero11.png"){
         Arquero* arquero=new Arquero();
         personaje=arquero;
-}
-//    else if(this->clickedPersonaje="mago11.png"){
-//        // crear un objeto de mago
-//    }
-//    else if(this->clickedPersonaje="artillero11.png"){
-//        // crear un objeto de artillero
-//    }
-//    else if(this->clickedPersonaje="lanza_fuego1.png"){
-//        // crear un objeto de mago
-//    }
+    }
+    else if(this->clickedPersonaje=="mago11.png"){
+        // crear un objeto de mago
+        Mago* mago = new Mago();
+        personaje = mago;
+    }
+    else if(this->clickedPersonaje=="artillero11.png"){
+        // crear un objeto de artillero
+        Artillero* artillero = new Artillero();
+        personaje = artillero;
+    }
+    else if(this->clickedPersonaje=="lanza_fuego1.png"){
+        // crear un objeto de lanza fuego
+        Lanza_Fuego* lanza_fuego = new Lanza_Fuego;
+        personaje = lanza_fuego;
+    }
     QLabel *imagen=new QLabel(this);//=new QLabel();
     if (this->clickedPersonaje!="" && x>150 && y>60 && x<1670 &&y<970)
     {
