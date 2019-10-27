@@ -14,6 +14,8 @@
 #include "estadisticaswindow.h"
 #include <unistd.h>
 #include <pthread.h>
+#include <Listas/matriz.h>
+#include "Personajes/Cursos/arquero.h"
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
@@ -21,8 +23,9 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
     int x=MapeadorX(cursor->pos().x()),y= MapeadorY(cursor->pos().y());
     int mapa_x = Definicion_MapaX(cursor->pos().x()), mapa_y= Definicion_MapaY(cursor->pos().y());
     cout<<"Posición X:"<<cursor->pos().x() <<" Posición Y:"<<cursor->pos().y()<<endl;
-    cout<<"LA POSICION PRESIONADA ES: ("<<mapa_x<<" , "<<mapa_y<<" )"<<endl;
+    cout<<"LA POSICION PRESIONADA ES: ("<<mapa_x<<" , "<<mapa_y<< " )"<<endl;
     ColocarImagen(x,y);
+
 
     //ColocarImagen(QCursor::pos().x(),QCursor::pos().y());
 }
@@ -53,6 +56,13 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setPalette(palette);
     //this->mapFromGlobal(QCursor::pos());
 
+    QLabel *imagen=new QLabel(this);//=new QLabel();
+    QPixmap pixmap(this->ruta+"tower_images/kareon2.png");
+    imagen->setPixmap(pixmap);
+    imagen->setFixedSize(135, 70);
+    imagen->move(243,973); //ensure that this coordinates are in you widget
+    imagen->show();
+    InicializarMatriz();
 
 }
 
@@ -61,8 +71,52 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::InicializarMatriz()
+{
+    Personaje  *cualquierPernaje=new Personaje;
+    cualquierPernaje->id=-1;
+        Lista <Personaje> *lista=new Lista<Personaje>();
+        // 10 elementos de una fila
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        lista->add_end(*cualquierPernaje);
+        //10 filas y así se forma la matriz de 10xx10
+
+        this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+         this->matriz->Append(lista);
+}
+
 void MainWindow::ColocarImagen(int x, int y)
 {
+    Personaje *personaje;
+    if (this->clickedPersonaje=="arquero11.png"){
+        Arquero* arquero=new Arquero();
+        personaje=arquero;
+}
+//    else if(this->clickedPersonaje="mago11.png"){
+//        // crear un objeto de mago
+//    }
+//    else if(this->clickedPersonaje="artillero11.png"){
+//        // crear un objeto de artillero
+//    }
+//    else if(this->clickedPersonaje="lanza_fuego1.png"){
+//        // crear un objeto de mago
+//    }
     QLabel *imagen=new QLabel(this);//=new QLabel();
     if (this->clickedPersonaje!="" && x>150 && y>60 && x<1670 &&y<970)
     {
@@ -73,13 +127,7 @@ void MainWindow::ColocarImagen(int x, int y)
     imagen->show();
     this->clickedPersonaje="";
     }
-    // cuando se coloca una una torre esta debe de enviar cada cierto tiempo una bala
-    //struct thread_data *argumentos;
-    //argumentos->x=x;
-    //argumentos->y=y;
-    //argumentos->velocidad=50000;
-    //pthread_t thread1;
-    //pthread_create(&thread1,nullptr,AnimacionHaciaAbajo,nullptr);
+
 
     cout<<"poniendo imagen";
 
@@ -257,10 +305,48 @@ int MainWindow::Definicion_MapaY(int mapa_y){
     return posY;
 }
 
+void MainWindow::ColocarPersonajeMatriz(int x, int y, Personaje personaje)
+{
+
+}
+
 
 void MainWindow::draw_matriz(){
-    //QGridLayout *matriz_lay = QGridLayout(ui->centralWidget);
-    //matriz_lay->SetMinimumSize();
+    Personaje p;
+    Lista<Enemigo> enemigos;
+    int num;
+
+    //prueba de la matriz
+    Matriz <Personaje> *matriz=new Matriz<Personaje>();
+
+    Personaje  *cualquierPernaje=new Personaje();
+    Lista <Personaje> *lista=new Lista<Personaje>();
+    // 10 elementos de una fila
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    lista->add_end(*cualquierPernaje);
+    //10 filas y así se forma la matriz de 10xx10
+
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+    matriz->Append(lista);
+
+    matriz->Display();
+    // finalización de la prueba de la matriz
 
 }
 

@@ -1,8 +1,8 @@
 #ifndef MONEDA_H
 #define MONEDA_H
+#include "../curso.h"
 
-
-class Moneda
+class Moneda : public Curso
 {
 public:
     Moneda();

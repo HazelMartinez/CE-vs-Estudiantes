@@ -55,6 +55,7 @@ class Lista
          * @return T Dato buscado
          */
         T get(int pos);
+        void setValue(int pos,T Data);
         Node<T> *head; /**Primer nodo de la lista*/
         int len; /**Largo de la lista*/
 
@@ -156,6 +157,18 @@ T Lista<T>::get(int pos) {
            return temp->Data;
 
    }
+
+template<typename T>
+void Lista<T>::setValue(int pos, T Data) {
+
+       Node<T> *temp = this->head;
+
+           for (int i = 0; i < pos; i++) {
+               temp = temp->next;
+           }
+           temp->Data=Data;
+   }
+
 template<typename T>
 /**
  * @brief

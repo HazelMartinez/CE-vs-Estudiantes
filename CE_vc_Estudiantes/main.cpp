@@ -26,40 +26,46 @@ int main(int argc, char *argv[])
     //MainWindow w;
     //w.show();
 
+    //Personaje p(0);
     Personaje p;
     Lista<Enemigo> enemigos;
     int num;
 
     //prueba de la matriz
-    Matriz <Personaje> *matriz=new Matriz<Personaje>();
+//    Matriz <Personaje> *matriz=new Matriz<Personaje>();
 
-    Personaje  *cualquierPernaje=new Personaje();
-    Lista <Personaje> *lista=new Lista<Personaje>();
-    // 10 elementos de una fila
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    lista->add_end(*cualquierPernaje);
-    //10 filas y así se forma la matriz de 10xx10
+//    //Personaje  *cualquierPernaje=new Personaje(0);
+//    Personaje  *cualquierPernaje=new Personaje;
+//    Lista <Personaje> *lista=new Lista<Personaje>();
+//    // 10 elementos de una fila
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    lista->add_end(*cualquierPernaje);
+//    //10 filas y así se forma la matriz de 10xx10
 
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
-    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+//    matriz->Append(lista);
+    //Personaje prueba =(Personaje)matriz->ObtieneElemento(1,2); // asi se prueba establecer elemento
+    //prueba.id=12;
+    //matriz->EstablecerElemento(1,2,prueba); //asi se inserta
 
-    matriz->Display();
+    //cout<<((Personaje)matriz->ObtieneElemento(1,2)).id<<endl; //Prueba de como se obtiene un un elemento de matriz
+    //matriz->Display();
     // finalización de la prueba de la matriz
 
 

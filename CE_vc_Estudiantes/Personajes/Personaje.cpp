@@ -8,6 +8,17 @@
 #include "Estudiantes/Mercenario.h"
 #include "Estudiantes/Ogro.h"
 
+//Personaje::Personaje(int Identificador){ //constructor de la clase Persona
+//    this->identificador = Identificador;
+//}
+void Personaje::Mostrar_Personaje(){
+    cout<< "Identificador es: " << identificador<<endl;
+}
+
+int Personaje::Get_Identificador(){
+    return this->identificador;
+}
+
 Enemigo *Personaje::crearEnemigo(int tipo)
 {
         Enemigo *temp = new Enemigo();

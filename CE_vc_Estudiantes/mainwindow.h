@@ -28,6 +28,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QGraphicsScene* scene;
+    void InicializarMatriz();
     void ColocarImagen(int x,int y);
     void* AnimacionHaciaAbajo(void*  argumentos);
     void *prueba();
@@ -35,6 +36,7 @@ public:
     int MapeadorY(int y);
     int Definicion_MapaX(int mapa_x);
     int Definicion_MapaY(int mapa_y);
+    void ColocarPersonajeMatriz(int x, int y, Personaje personaje);
 
 private slots:
     void draw_matriz();
@@ -65,6 +67,7 @@ private:
     QCursor *cursor;
     QString clickedPersonaje="";
     QString ruta="/home/hazel/Vídeos/CE-vs-Estudiantes/CE_vc_Estudiantes/";
+
     Matriz <Personaje> *matriz=new Matriz<Personaje>();
 };
 

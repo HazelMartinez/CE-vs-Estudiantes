@@ -1,6 +1,5 @@
 #include "arquero.h"
 
-Arquero::Arquero()
-{
+Arquero::Arquero(){
 
 }

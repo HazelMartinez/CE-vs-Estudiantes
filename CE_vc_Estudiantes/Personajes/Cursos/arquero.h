@@ -1,9 +1,9 @@
 #ifndef ARQUERO_H
 #define ARQUERO_H
+#include "../curso.h"
 
 
-class Arquero
-{
+class Arquero : public Curso {
 public:
     Arquero();
 };

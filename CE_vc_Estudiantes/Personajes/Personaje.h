@@ -6,10 +6,15 @@
 
 
 class Personaje {
+private:
+    int identificador;
 public:
+    //Personaje(int);
+    void Mostrar_Personaje();
     int id=0;
-     Enemigo* crearEnemigo(int tipo);
-//     Curso* crearCurso(int tipo);
+    Enemigo* crearEnemigo(int tipo);
+    int Get_Identificador();
+//  Curso* crearCurso(int tipo);
 
 };
 

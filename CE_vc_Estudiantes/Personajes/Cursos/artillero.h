@@ -1,9 +1,8 @@
 #ifndef ARTILLERO_H
 #define ARTILLERO_H
+#include "../curso.h"
 
-
-class Artillero
-{
+class Artillero : public Curso{
 public:
     Artillero();
 };

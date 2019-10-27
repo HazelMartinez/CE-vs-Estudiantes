@@ -1,9 +1,10 @@
 #ifndef MAGO_H
 #define MAGO_H
+#include "../curso.h"
 
+class Mago : public Curso {
+private:
 
-class Mago
-{
 public:
     Mago();
 };

@@ -13,8 +13,32 @@ public:
     void Append(Lista<T> *value);
     void Display();
     int length;
+    T ObtieneElemento(int x, int y);
+    void EstablecerElemento(int x,int y, T personaje);
     NodoMatriz<T> *head, *tail;
 };
+
+
+template<typename T>
+void Matriz<T>::EstablecerElemento(int x, int y, T personaje){
+    NodoMatriz<T> *temp = this->head;
+
+        for (int i = 0; i < x; i++) {
+            temp = temp->next;
+        }
+        Lista<T> *fila=temp->value; // obtiene la fila busca
+        fila->setValue(y,personaje);
+}
+template<typename T>
+T Matriz<T>::ObtieneElemento(int x, int y){
+    NodoMatriz<T> *temp = this->head;
+
+        for (int i = 0; i < x; i++) {
+            temp = temp->next;
+        }
+        Lista<T> *fila=temp->value; // obtiene la fila busca
+        return  fila->get(y);
+}
 
 template<typename T>
 Matriz<T>::Matriz(T){

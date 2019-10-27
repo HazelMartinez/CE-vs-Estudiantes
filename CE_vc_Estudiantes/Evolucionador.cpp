@@ -12,6 +12,7 @@ Evolucionador::Evolucionador()
 
 Enemigo* Evolucionador::Cruce(Enemigo madre, Enemigo padre)
 {
+    //Personaje p(0);
     Personaje p;
     Enemigo* hijo;
     if (madre.tipo > padre.tipo){
