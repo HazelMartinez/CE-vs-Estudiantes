@@ -125,7 +125,7 @@ void MainWindow::ColocarImagen(int x, int y)
     if (this->clickedPersonaje=="arquero11.png"){
         Arquero *arquero=new Arquero();
         personaje=arquero;
-
+        personaje->id=1; //significa que es un arquero
 
         cout<<"objeto posicionado en: "<<posX_torre<<" , "<< posY_torre<<endl;
         //this->matriz->EstablecerElemento(posX_torre, posY_torre, personaje);
@@ -134,16 +134,19 @@ void MainWindow::ColocarImagen(int x, int y)
         // crear un objeto de mago
         Mago* mago = new Mago();
         personaje = mago;
+        personaje->id=2; //significa que es un mago
     }
     else if(this->clickedPersonaje=="artillero11.png"){
         // crear un objeto de artillero
         Artillero* artillero = new Artillero();
         personaje = artillero;
+        personaje->id = 3;
     }
     else if(this->clickedPersonaje=="lanza_fuego1.png"){
         // crear un objeto de lanza fuego
         Lanza_Fuego* lanza_fuego = new Lanza_Fuego;
         personaje = lanza_fuego;
+        personaje->id = 4;
     }
     QLabel *imagen=new QLabel(this);//=new QLabel();
     if (this->clickedPersonaje!="" && x>150 && y>60 && x<1670 &&y<970)
