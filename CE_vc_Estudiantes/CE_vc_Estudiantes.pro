@@ -47,7 +47,8 @@ SOURCES += \
     Personajes/Cursos/lanza_fuego.cpp \
     Personajes/Cursos/mago.cpp \
     Personajes/Cursos/evaluacion.cpp \
-    Personajes/Cursos/moneda.cpp
+    Personajes/Cursos/moneda.cpp \
+    backtracking.cpp
 
 HEADERS += \
         Evolucionador.h \
@@ -72,7 +73,8 @@ HEADERS += \
     Personajes/Cursos/lanza_fuego.h \
     Personajes/Cursos/mago.h \
     Personajes/Cursos/evaluacion.h \
-    Personajes/Cursos/moneda.h
+    Personajes/Cursos/moneda.h \
+    backtracking.h
 
 FORMS += \
         mainwindow.ui \

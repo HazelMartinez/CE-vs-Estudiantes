@@ -10,6 +10,7 @@
 #include "Listas/matriz.h"
 #include "Juego.h"
 #include "ventana_inicio.h"
+#include "backtracking.h"
 
 using namespace std;
 
@@ -81,7 +82,6 @@ int main(int argc, char *argv[])
     cout<< uno->Mutacion(enemigos.get(0)).ResistenciaMago<<endl;
     cout<< uno->Mutacion(enemigos.get(0)).ResistenciaArtilleros<<endl;
     cout<< uno->Inversion(enemigos.get(0)).ResistenciaArtilleros<<endl;
-
 
 
 

@@ -568,9 +568,6 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit_generaciones"/>
-     </item>
      <item row="6" column="0">
       <widget class="QLabel" name="label_proba_inversiones">
        <property name="font">
@@ -603,40 +600,6 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_reprobados"/>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit_fitness"/>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_nivel"/>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLineEdit" name="lineEdit_proba_mutaciones"/>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_cant_mutaciones"/>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLineEdit" name="lineEdit_proba_inversiones"/>
-     </item>
-     <item row="7" column="1">
-      <widget class="QLineEdit" name="lineEdit_canti_inversiones">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>100</width>
-         <height>0</height>
-        </size>
-       </property>
-      </widget>
-     </item>
      <item row="8" column="1">
       <widget class="QPushButton" name="pushButton_close">
        <property name="font">
@@ -646,6 +609,116 @@
        </property>
        <property name="text">
         <string>Cerrar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_generaciones">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_reprobados_2">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_fitness_2">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_nivel_2">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_probabilidades">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_mutaciones_ocurridas">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_proba_inveriones">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_inversiones_ocurridas">
+       <property name="font">
+        <font>
+         <family>URW Bookman L</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
