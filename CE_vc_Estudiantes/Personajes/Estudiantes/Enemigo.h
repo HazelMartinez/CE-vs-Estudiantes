@@ -56,8 +56,7 @@ public:
         */
        ~Enemigo();
        QString ruta =
-        "//home/abigail/Desktop/CE-vs-Estudiantes-df0e81289df89dde0297e25a5bee49a8c92a4796/CE_vc_Estudiantes/"; /**Ruta donde estan guardadas las imagenes. */
-
+        "/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/"; /**Ruta donde estan guardadas las imagenes. */
 
 };
 

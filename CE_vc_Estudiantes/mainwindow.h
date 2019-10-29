@@ -190,7 +190,7 @@ private:
     QCursor *cursor; /**De aquí se obtiene la posición del mouse */
     QString clickedPersonaje=""; /**Se guarda el curso a colocar en el tablero */
     QString ruta=
-    "//home/abigail/Desktop/CE-vs-Estudiantes-df0e81289df89dde0297e25a5bee49a8c92a4796/CE_vc_Estudiantes/"; 
+    "/home/hazel/Escritorio/Proyecto2_CEvsEstudiantes/CE-vs-Estudiantes/CE_vc_Estudiantes/";
     /**Ruta donde se guardan las imagenes*/
     Matriz <Personaje> *matriz=new Matriz<Personaje>(); /**Matriz que guarda los personajes colocados en el tablero. */
     Lista<Enemigo*> enemigos; /**Oleada actual de enemigos*/
