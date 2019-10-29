@@ -1,0 +1,228 @@
+\hypertarget{classMainWindow}{}\section{Main\+Window Class Reference}
+\label{classMainWindow}\index{Main\+Window@{Main\+Window}}
+
+
+Clase que gestiona la ventana principal y el juego.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMainWindow_1_1thread__data}{thread\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructor por defecto. \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_adaba7b35260aab87d6e59df8cc5d1653}{Colocar\+Imagen} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Coloca la imagen de los cursos en el tablero. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classMainWindow_abc52e8fdac1541509366c1acd309aa17}{Animacion\+Hacia\+Abajo} (void $\ast$argumentos)
+\item 
+\mbox{\Hypertarget{classMainWindow_a8b207ade51b32cc48bdea863839a28ca}\label{classMainWindow_a8b207ade51b32cc48bdea863839a28ca}} 
+void $\ast$ {\bfseries prueba} ()
+\item 
+int \hyperlink{classMainWindow_ac1039de8ff9cd18a043f2774da95ae08}{MapeadorX} (int x)
+\begin{DoxyCompactList}\small\item\em Le asigna un rango de pixeles a una posición i de la matriz. \end{DoxyCompactList}\item 
+int \hyperlink{classMainWindow_a7b527f7cf8ab67320613d78c0c1e2bd2}{MapeadorY} (int y)
+\begin{DoxyCompactList}\small\item\em Le asigna un rango de pixeles a una posición j de la matriz. \end{DoxyCompactList}\item 
+int \hyperlink{classMainWindow_aa06021cdca887a633eace0bf8761b3e7}{Definicion\+\_\+\+MapaX} (int mapa\+\_\+x)
+\item 
+int \hyperlink{classMainWindow_a4b1f37b214d278525abbae10445e64a9}{Definicion\+\_\+\+MapaY} (int mapa\+\_\+y)
+\item 
+\mbox{\Hypertarget{classMainWindow_a0c003f190f9ed9d61e15d5296e08c524}\label{classMainWindow_a0c003f190f9ed9d61e15d5296e08c524}} 
+void {\bfseries Inicializar\+Matriz} ()
+\item 
+\mbox{\Hypertarget{classMainWindow_ab713c2c0338c0cc138981042b2cba1bc}\label{classMainWindow_ab713c2c0338c0cc138981042b2cba1bc}} 
+void {\bfseries Colocar\+Personaje\+Matriz} (int x, int y, Personaje personaje)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a271cda81826d58a272a7b42447d8d90f}\label{classMainWindow_a271cda81826d58a272a7b42447d8d90f}} 
+Node$<$ Enemigo $\ast$ $>$ $\ast$ {\bfseries temp\+Aparecer}
+\item 
+int \hyperlink{classMainWindow_ade7c819849bfce458b66795a473697e5}{movimiento\+Actual} = 1
+\item 
+int \hyperlink{classMainWindow_a1c3bc1ef6b18ff768eaebb009fa9957d}{pixmap} = 1
+\item 
+Q\+Graphics\+Scene $\ast$ \hyperlink{classMainWindow_a51ac2b126495216832501cea3929c6f6}{scene}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a1dff511c9697cbcb60150894f480b9c8}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em Sobreescritura de la acción al presionar el mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que gestiona la ventana principal y el juego. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+Imagen actual 
+\begin{DoxyParams}{Parameters}
+{\em parent} & padre de la ventana. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_abc52e8fdac1541509366c1acd309aa17}\label{classMainWindow_abc52e8fdac1541509366c1acd309aa17}} 
+\index{Main\+Window@{Main\+Window}!Animacion\+Hacia\+Abajo@{Animacion\+Hacia\+Abajo}}
+\index{Animacion\+Hacia\+Abajo@{Animacion\+Hacia\+Abajo}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Animacion\+Hacia\+Abajo()}{AnimacionHaciaAbajo()}}
+{\footnotesize\ttfamily void $\ast$ Main\+Window\+::\+Animacion\+Hacia\+Abajo (\begin{DoxyParamCaption}\item[{void $\ast$}]{argumentos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em argumentos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_adaba7b35260aab87d6e59df8cc5d1653}\label{classMainWindow_adaba7b35260aab87d6e59df8cc5d1653}} 
+\index{Main\+Window@{Main\+Window}!Colocar\+Imagen@{Colocar\+Imagen}}
+\index{Colocar\+Imagen@{Colocar\+Imagen}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Colocar\+Imagen()}{ColocarImagen()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Colocar\+Imagen (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Coloca la imagen de los cursos en el tablero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Posición en el eje x a colocar el curso. \\
+\hline
+{\em y} & Posición en el eje y a colocar el curso. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_aa06021cdca887a633eace0bf8761b3e7}\label{classMainWindow_aa06021cdca887a633eace0bf8761b3e7}} 
+\index{Main\+Window@{Main\+Window}!Definicion\+\_\+\+MapaX@{Definicion\+\_\+\+MapaX}}
+\index{Definicion\+\_\+\+MapaX@{Definicion\+\_\+\+MapaX}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Definicion\+\_\+\+Mapa\+X()}{Definicion\_MapaX()}}
+{\footnotesize\ttfamily int Main\+Window\+::\+Definicion\+\_\+\+MapaX (\begin{DoxyParamCaption}\item[{int}]{mapa\+\_\+x }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapa\+\_\+x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a4b1f37b214d278525abbae10445e64a9}\label{classMainWindow_a4b1f37b214d278525abbae10445e64a9}} 
+\index{Main\+Window@{Main\+Window}!Definicion\+\_\+\+MapaY@{Definicion\+\_\+\+MapaY}}
+\index{Definicion\+\_\+\+MapaY@{Definicion\+\_\+\+MapaY}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Definicion\+\_\+\+Mapa\+Y()}{Definicion\_MapaY()}}
+{\footnotesize\ttfamily int Main\+Window\+::\+Definicion\+\_\+\+MapaY (\begin{DoxyParamCaption}\item[{int}]{mapa\+\_\+y }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapa\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_ac1039de8ff9cd18a043f2774da95ae08}\label{classMainWindow_ac1039de8ff9cd18a043f2774da95ae08}} 
+\index{Main\+Window@{Main\+Window}!MapeadorX@{MapeadorX}}
+\index{MapeadorX@{MapeadorX}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Mapeador\+X()}{MapeadorX()}}
+{\footnotesize\ttfamily int Main\+Window\+::\+MapeadorX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Le asigna un rango de pixeles a una posición i de la matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posición en x a asignarle al i. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int i correspondiente al x. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a7b527f7cf8ab67320613d78c0c1e2bd2}\label{classMainWindow_a7b527f7cf8ab67320613d78c0c1e2bd2}} 
+\index{Main\+Window@{Main\+Window}!MapeadorY@{MapeadorY}}
+\index{MapeadorY@{MapeadorY}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Mapeador\+Y()}{MapeadorY()}}
+{\footnotesize\ttfamily int Main\+Window\+::\+MapeadorY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Le asigna un rango de pixeles a una posición j de la matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & posición en y a asignarle al j. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int j correspondiente al y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a1dff511c9697cbcb60150894f480b9c8}\label{classMainWindow_a1dff511c9697cbcb60150894f480b9c8}} 
+\index{Main\+Window@{Main\+Window}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{mouse\+Press\+Event()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Sobreescritura de la acción al presionar el mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMainWindow_ade7c819849bfce458b66795a473697e5}\label{classMainWindow_ade7c819849bfce458b66795a473697e5}} 
+\index{Main\+Window@{Main\+Window}!movimiento\+Actual@{movimiento\+Actual}}
+\index{movimiento\+Actual@{movimiento\+Actual}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{movimiento\+Actual}{movimientoActual}}
+{\footnotesize\ttfamily int Main\+Window\+::movimiento\+Actual = 1}
+
+Enemigo que se esta moviendo \mbox{\Hypertarget{classMainWindow_a1c3bc1ef6b18ff768eaebb009fa9957d}\label{classMainWindow_a1c3bc1ef6b18ff768eaebb009fa9957d}} 
+\index{Main\+Window@{Main\+Window}!pixmap@{pixmap}}
+\index{pixmap@{pixmap}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{pixmap}{pixmap}}
+{\footnotesize\ttfamily int Main\+Window\+::pixmap = 1}
+
+Movimiento del enemigo \mbox{\Hypertarget{classMainWindow_a51ac2b126495216832501cea3929c6f6}\label{classMainWindow_a51ac2b126495216832501cea3929c6f6}} 
+\index{Main\+Window@{Main\+Window}!scene@{scene}}
+\index{scene@{scene}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily Q\+Graphics\+Scene$\ast$ Main\+Window\+::scene}
+
+T\+O\+DO\+: describe 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

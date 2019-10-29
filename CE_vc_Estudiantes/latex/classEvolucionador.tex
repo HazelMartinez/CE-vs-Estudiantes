@@ -1,0 +1,215 @@
+\hypertarget{classEvolucionador}{}\section{Evolucionador Class Reference}
+\label{classEvolucionador}\index{Evolucionador@{Evolucionador}}
+
+
+Clase encargada de gestionar el algoritmo genetico.  
+
+
+
+
+{\ttfamily \#include $<$Evolucionador.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Lista$<$ Enemigo $\ast$ $>$ \hyperlink{classEvolucionador_a6fee16ccc7ee18b0be41709b10f4a374}{Crea\+Nueva\+Generacion} (Lista$<$ Enemigo $\ast$$>$)
+\begin{DoxyCompactList}\small\item\em Crea una generación nueva a partir de la actual siguiendo un algoritmo genetico. Toma los enemigos con fitness mayor y los agrega en una lista nueva. Cruza los enemigos adyacentes. Muta un 10\% de la generación e invierte un 5\%. \end{DoxyCompactList}\item 
+Enemigo $\ast$ \hyperlink{classEvolucionador_a7314c24ac7bd26a185ca15e9552e08a1}{Cruce} (Enemigo $\ast$madre, Enemigo $\ast$padre)
+\begin{DoxyCompactList}\small\item\em Cruza 2 enemigos para crear uno nuevo. Toma la primera mitad del A\+DN de la madre y la segunda del padre y las une para crear el A\+DN de un enemigo nuevo. \end{DoxyCompactList}\item 
+Enemigo $\ast$ \hyperlink{classEvolucionador_a75021ad99b4f7de2005e75b37c1b3514}{Mutacion} (Enemigo $\ast$sujeto)
+\begin{DoxyCompactList}\small\item\em Toma un bloque aleatorio de A\+DN y lo cambia por 111. \end{DoxyCompactList}\item 
+Enemigo $\ast$ \hyperlink{classEvolucionador_a8607ddfc5393279f196e3558f108a622}{Inversion} (Enemigo $\ast$sujeto)
+\begin{DoxyCompactList}\small\item\em Toma un bit aleatorio de A\+DN y lo cambia por 1 si es 0 y por 0 si es 1. \end{DoxyCompactList}\item 
+\hyperlink{classEvolucionador_abf5c13fc4eea8645f3a2f15ba4578a66}{Evolucionador} (const \hyperlink{classEvolucionador}{Evolucionador} $\ast$)=delete
+\item 
+\hyperlink{classEvolucionador}{Evolucionador} $\ast$ \hyperlink{classEvolucionador_a18638af1410d418b569a95764c0ad4ec}{operator=} (const \hyperlink{classEvolucionador}{Evolucionador} $\ast$)=delete
+\item 
+string \hyperlink{classEvolucionador_a6ede9c321c7f3687a94ccf67c00c8b80}{Obtener\+A\+DN} (Enemigo $\ast$sujeto)
+\begin{DoxyCompactList}\small\item\em Cambia los atributos del enemigo a una cadena binaria. \end{DoxyCompactList}\item 
+Enemigo $\ast$ \hyperlink{classEvolucionador_af2066236151cfa4425826094a0ec8aae}{Crear\+Enemigo\+A\+DN} (string A\+DN)
+\begin{DoxyCompactList}\small\item\em Crea un enemigo nuevo a partir de su A\+DN. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEvolucionador_ab5c44d98055cf797ff81b66f9070ae05}\label{classEvolucionador_ab5c44d98055cf797ff81b66f9070ae05}} 
+\hyperlink{classEvolucionador_ab5c44d98055cf797ff81b66f9070ae05}{$\sim$\+Evolucionador} ()
+\begin{DoxyCompactList}\small\item\em Destructor por defecto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEvolucionador}{Evolucionador} $\ast$ \hyperlink{classEvolucionador_abd8e31b02a6d1dd2a6e21271b8e3554b}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Singleton de la clase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEvolucionador_acc92fc2d58e1445679a6bd4b361768d6}\label{classEvolucionador_acc92fc2d58e1445679a6bd4b361768d6}} 
+Lista$<$ Enemigo $\ast$ $>$ {\bfseries Gen\+Actual}
+\item 
+int \hyperlink{classEvolucionador_ad998d4fe28318e749f2e11f0b5000141}{gen}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase encargada de gestionar el algoritmo genetico. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEvolucionador_abf5c13fc4eea8645f3a2f15ba4578a66}\label{classEvolucionador_abf5c13fc4eea8645f3a2f15ba4578a66}} 
+\index{Evolucionador@{Evolucionador}!Evolucionador@{Evolucionador}}
+\index{Evolucionador@{Evolucionador}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Evolucionador()}{Evolucionador()}}
+{\footnotesize\ttfamily Evolucionador\+::\+Evolucionador (\begin{DoxyParamCaption}\item[{const \hyperlink{classEvolucionador}{Evolucionador} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEvolucionador_a6fee16ccc7ee18b0be41709b10f4a374}\label{classEvolucionador_a6fee16ccc7ee18b0be41709b10f4a374}} 
+\index{Evolucionador@{Evolucionador}!Crea\+Nueva\+Generacion@{Crea\+Nueva\+Generacion}}
+\index{Crea\+Nueva\+Generacion@{Crea\+Nueva\+Generacion}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Crea\+Nueva\+Generacion()}{CreaNuevaGeneracion()}}
+{\footnotesize\ttfamily Lista$<$ Enemigo $\ast$ $>$ Evolucionador\+::\+Crea\+Nueva\+Generacion (\begin{DoxyParamCaption}\item[{Lista$<$ Enemigo $\ast$$>$}]{actual }\end{DoxyParamCaption})}
+
+
+
+Crea una generación nueva a partir de la actual siguiendo un algoritmo genetico. Toma los enemigos con fitness mayor y los agrega en una lista nueva. Cruza los enemigos adyacentes. Muta un 10\% de la generación e invierte un 5\%. 
+
+Número de generaciones transcurridas. 
+\begin{DoxyParams}{Parameters}
+{\em Generación} & actual.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista$<$\+Enemigo $\ast$$>$ Nueva generación. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_af2066236151cfa4425826094a0ec8aae}\label{classEvolucionador_af2066236151cfa4425826094a0ec8aae}} 
+\index{Evolucionador@{Evolucionador}!Crear\+Enemigo\+A\+DN@{Crear\+Enemigo\+A\+DN}}
+\index{Crear\+Enemigo\+A\+DN@{Crear\+Enemigo\+A\+DN}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Crear\+Enemigo\+A\+D\+N()}{CrearEnemigoADN()}}
+{\footnotesize\ttfamily Enemigo $\ast$ Evolucionador\+::\+Crear\+Enemigo\+A\+DN (\begin{DoxyParamCaption}\item[{string}]{A\+DN }\end{DoxyParamCaption})}
+
+
+
+Crea un enemigo nuevo a partir de su A\+DN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A\+DN} & Cadena binaria con la información del enemigo a crear. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Enemigo Instancia de la clase enemigo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_a7314c24ac7bd26a185ca15e9552e08a1}\label{classEvolucionador_a7314c24ac7bd26a185ca15e9552e08a1}} 
+\index{Evolucionador@{Evolucionador}!Cruce@{Cruce}}
+\index{Cruce@{Cruce}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Cruce()}{Cruce()}}
+{\footnotesize\ttfamily Enemigo $\ast$ Evolucionador\+::\+Cruce (\begin{DoxyParamCaption}\item[{Enemigo $\ast$}]{madre,  }\item[{Enemigo $\ast$}]{padre }\end{DoxyParamCaption})}
+
+
+
+Cruza 2 enemigos para crear uno nuevo. Toma la primera mitad del A\+DN de la madre y la segunda del padre y las une para crear el A\+DN de un enemigo nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em madre} & Primera parte del A\+DN del individuo. \\
+\hline
+{\em padre} & Segunda parte del A\+DN del individuo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Enemigo Enemigo hijo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_abd8e31b02a6d1dd2a6e21271b8e3554b}\label{classEvolucionador_abd8e31b02a6d1dd2a6e21271b8e3554b}} 
+\index{Evolucionador@{Evolucionador}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{classEvolucionador}{Evolucionador} $\ast$ Evolucionador\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Singleton de la clase. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classEvolucionador}{Evolucionador} Instancia de la clase evolucionador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_a8607ddfc5393279f196e3558f108a622}\label{classEvolucionador_a8607ddfc5393279f196e3558f108a622}} 
+\index{Evolucionador@{Evolucionador}!Inversion@{Inversion}}
+\index{Inversion@{Inversion}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Inversion()}{Inversion()}}
+{\footnotesize\ttfamily Enemigo $\ast$ Evolucionador\+::\+Inversion (\begin{DoxyParamCaption}\item[{Enemigo $\ast$}]{sujeto }\end{DoxyParamCaption})}
+
+
+
+Toma un bit aleatorio de A\+DN y lo cambia por 1 si es 0 y por 0 si es 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sujeto} & Enemigo al que se le va a realizar la inversión. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Enemigo Enemigo invertido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_a75021ad99b4f7de2005e75b37c1b3514}\label{classEvolucionador_a75021ad99b4f7de2005e75b37c1b3514}} 
+\index{Evolucionador@{Evolucionador}!Mutacion@{Mutacion}}
+\index{Mutacion@{Mutacion}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Mutacion()}{Mutacion()}}
+{\footnotesize\ttfamily Enemigo $\ast$ Evolucionador\+::\+Mutacion (\begin{DoxyParamCaption}\item[{Enemigo $\ast$}]{sujeto }\end{DoxyParamCaption})}
+
+
+
+Toma un bloque aleatorio de A\+DN y lo cambia por 111. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sujeto} & Enemigo al que se le va a realizar la mutación. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Enemigo Enemigo mutado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_a6ede9c321c7f3687a94ccf67c00c8b80}\label{classEvolucionador_a6ede9c321c7f3687a94ccf67c00c8b80}} 
+\index{Evolucionador@{Evolucionador}!Obtener\+A\+DN@{Obtener\+A\+DN}}
+\index{Obtener\+A\+DN@{Obtener\+A\+DN}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{Obtener\+A\+D\+N()}{ObtenerADN()}}
+{\footnotesize\ttfamily string Evolucionador\+::\+Obtener\+A\+DN (\begin{DoxyParamCaption}\item[{Enemigo $\ast$}]{sujeto }\end{DoxyParamCaption})}
+
+
+
+Cambia los atributos del enemigo a una cadena binaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sujeto} & Enemigo del que se quiere obtener el A\+DN. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A\+DN del enemigo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvolucionador_a18638af1410d418b569a95764c0ad4ec}\label{classEvolucionador_a18638af1410d418b569a95764c0ad4ec}} 
+\index{Evolucionador@{Evolucionador}!operator=@{operator=}}
+\index{operator=@{operator=}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classEvolucionador}{Evolucionador}$\ast$ Evolucionador\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classEvolucionador}{Evolucionador} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classEvolucionador_ad998d4fe28318e749f2e11f0b5000141}\label{classEvolucionador_ad998d4fe28318e749f2e11f0b5000141}} 
+\index{Evolucionador@{Evolucionador}!gen@{gen}}
+\index{gen@{gen}!Evolucionador@{Evolucionador}}
+\subsubsection{\texorpdfstring{gen}{gen}}
+{\footnotesize\ttfamily int Evolucionador\+::gen}
+
+Generación actual de enemigos 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Evolucionador.\+h\item 
+Evolucionador.\+cpp\end{DoxyCompactItemize}

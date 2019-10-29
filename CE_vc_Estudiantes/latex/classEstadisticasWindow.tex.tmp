@@ -1,0 +1,54 @@
+\hypertarget{classEstadisticasWindow}{}\section{Estadisticas\+Window Class Reference}
+\label{classEstadisticasWindow}\index{Estadisticas\+Window@{Estadisticas\+Window}}
+
+
+Ventana para mostrar las estadisticas del juego.  
+
+
+
+
+{\ttfamily \#include $<$estadisticaswindow.\+h$>$}
+
+
+
+Inheritance diagram for Estadisticas\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Estadisticas\+Window\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEstadisticasWindow_a28664b9fc6032f91f467facdd2e8f19b}{Estadisticas\+Window} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto,. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEstadisticasWindow_a2253521e7c2e0a4788ea7107c56559c0}\label{classEstadisticasWindow_a2253521e7c2e0a4788ea7107c56559c0}} 
+\hyperlink{classEstadisticasWindow_a2253521e7c2e0a4788ea7107c56559c0}{$\sim$\+Estadisticas\+Window} ()
+\begin{DoxyCompactList}\small\item\em Destructor por defecto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ventana para mostrar las estadisticas del juego. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEstadisticasWindow_a28664b9fc6032f91f467facdd2e8f19b}\label{classEstadisticasWindow_a28664b9fc6032f91f467facdd2e8f19b}} 
+\index{Estadisticas\+Window@{Estadisticas\+Window}!Estadisticas\+Window@{Estadisticas\+Window}}
+\index{Estadisticas\+Window@{Estadisticas\+Window}!Estadisticas\+Window@{Estadisticas\+Window}}
+\subsubsection{\texorpdfstring{Estadisticas\+Window()}{EstadisticasWindow()}}
+{\footnotesize\ttfamily Estadisticas\+Window\+::\+Estadisticas\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor por defecto,. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & padre de la clase a crear. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+estadisticaswindow.\+h\item 
+estadisticaswindow.\+cpp\end{DoxyCompactItemize}
