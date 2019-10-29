@@ -1,3 +1,0 @@
-# CE vs Estudiantes
-### Proyecto de algoritmos y estructuras de datos II 
-El presente proyecto consiste en una aplicación desktop que corresponde un juego estilo “Plants vs Zombies” ambientado en la aventura universitaria de los estudiantes de la carrera Ingeniería en Computadores. El juego genera oleadas de zombies, que representan estudiantes de distintas clases y categorías. El jugador se encarga de colocar cursos en lugares predeterminados de la zona de validación, para que los estudiantes enfrenten estos cursos y atravesar la zona de validación para poder llegar a la zona de aprobación. Después de cada oleada, los estudiantes evolucionan haciendo que estos tengan mejores condiciones para enfrentar los cursos.
