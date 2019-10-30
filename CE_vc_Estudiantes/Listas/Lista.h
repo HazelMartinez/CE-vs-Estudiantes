@@ -62,6 +62,7 @@ class Lista
          * @param Dato dato que contiene el nodo a eliminar
          */
         void eliminar(Node<T> *Dato);
+        bool verifica_full();
         Node<T> *head; /**Primer nodo de la lista*/
         int len; /**Largo de la lista*/
          void setValue(int pos,T Data);
@@ -241,6 +242,27 @@ void Lista<T>::print() {
         std::cout<< endl;
         std::cout<< " ---------------------------"<<endl;
     }
+template<typename T>
+bool Lista<T>::verifica_full(){
+    int contador = 0;
+    Node<T> *temp = this->head;
+    while (temp != NULL){
+
+        if((((Personaje)temp->Data).id) == -1){
+            contador += 1;
+        }
+        temp = temp->next;
+
+
+    }
+    if(contador>=2){
+        return true;
+    }
+    else{
+        return false; //esta lleno
+    }
+}
+
 
 template<typename T>
 /**

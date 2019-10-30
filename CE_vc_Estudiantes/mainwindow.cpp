@@ -42,6 +42,7 @@ MainWindow::MainWindow(QWidget *parent) :
 //    setScene(scene);
     //this->centralWidget()->setStyleSheet();
     //this->centralWidget()->setStyleSheet("background-image:url(\"fondo_total_f.png\"); background-position: center;" );
+    InicializarMatriz();
     draw_matriz();
     image_arquero();
     image_artillero();
@@ -57,7 +58,7 @@ MainWindow::MainWindow(QWidget *parent) :
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
     //this->mapFromGlobal(QCursor::pos());
-    InicializarMatriz();
+
 
     Personaje p;
      QTimer * tiempoMover = new QTimer(this);
@@ -155,48 +156,49 @@ void MainWindow::ColocarImagen(int x, int y)
     //    int posX_torre = Definicion_MapaX(cursor->pos().x());
     //    int posY_torre= Definicion_MapaY(cursor->pos().y());
 
-        if (this->clickedPersonaje=="arquero11.png"){
-            Arquero *arquero=new Arquero();
-            personaje=arquero;
-            personaje->id=1; //significa que es un arquero
+        if(matriz->get(posX_torre).verifica_full()==true){
+           //matriz->Display();
+            if (this->clickedPersonaje=="arquero11.png"){
+                Arquero *arquero=new Arquero();
+                personaje=arquero;
+                personaje->id=1; //significa que es un arquero
 
-            cout<<"objeto posicionado en: "<<posX_torre<<" , "<< posY_torre<<endl;
-            //this->matriz->EstablecerElemento(posX_torre, posY_torre, personaje);
-        }
-        else if(this->clickedPersonaje=="mago11.png"){
-            // crear un objeto de mago
-            Mago* mago = new Mago();
-            personaje = mago;
-            personaje->id=2; //significa que es un mago
-        }
-        else if(this->clickedPersonaje=="artillero11.png"){
-            // crear un objeto de artillero
-            Artillero* artillero = new Artillero();
-            personaje = artillero;
-            personaje->id = 3;
-        }
-        else if(this->clickedPersonaje=="lanza_fuego1.png"){
-            // crear un objeto de lanza fuego
-            Lanza_Fuego* lanza_fuego = new Lanza_Fuego;
-            personaje = lanza_fuego;
-            personaje->id = 4;
-        }
-        QLabel *imagen=new QLabel(this);//=new QLabel();
-        if (this->clickedPersonaje!="" && x>150 && y>60 && x<1670 &&y<970)
-        {
-        QPixmap pixmap(this->ruta+"tower_images/"+this->clickedPersonaje);
-        imagen->setPixmap(pixmap);
-        imagen->setFixedSize(135, 70);
-        imagen->move(x,y); //ensure that this coordinates are in you widget
-        imagen->show();
-        this->clickedPersonaje="";
-        }
-        this->matriz->EstablecerElemento(posX_torre, posY_torre, *personaje);
-        this->matriz->Display();
+                cout<<"objeto posicionado en: "<<posX_torre<<" , "<< posY_torre<<endl;
+                //this->matriz->EstablecerElemento(posX_torre, posY_torre, personaje);
+            }
+            else if(this->clickedPersonaje=="mago11.png"){
+                // crear un objeto de mago
+                Mago* mago = new Mago();
+                personaje = mago;
+                personaje->id=2; //significa que es un mago
+            }
+            else if(this->clickedPersonaje=="artillero11.png"){
+                // crear un objeto de artillero
+                Artillero* artillero = new Artillero();
+                personaje = artillero;
+                personaje->id = 3;
+            }
+            else if(this->clickedPersonaje=="lanza_fuego1.png"){
+                // crear un objeto de lanza fuego
+                Lanza_Fuego* lanza_fuego = new Lanza_Fuego;
+                personaje = lanza_fuego;
+                personaje->id = 4;
+            }
+            QLabel *imagen=new QLabel(this);//=new QLabel();
+            if (this->clickedPersonaje!="" && x>150 && y>60 && x<1670 &&y<970)
+            {
+            QPixmap pixmap(this->ruta+"tower_images/"+this->clickedPersonaje);
+            imagen->setPixmap(pixmap);
+            imagen->setFixedSize(135, 70);
+            imagen->move(x,y); //ensure that this coordinates are in you widget
+            imagen->show();
+            this->clickedPersonaje="";
+            }
+            this->matriz->EstablecerElemento(posX_torre, posY_torre, *personaje);
+            this->matriz->Display();
 
-        cout<<"poniendo imagen";
-
-
+            cout<<"poniendo imagen";
+        }
 }
 
   void* MainWindow::AnimacionHaciaAbajo(void * argumentos)//(int x,int y, int velocidad)
